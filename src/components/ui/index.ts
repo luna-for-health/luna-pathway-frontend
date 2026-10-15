@@ -5,6 +5,7 @@ export { Chip, FilterChip } from './chip';
 export { Input } from './input';
 export { Link } from './link';
 export { Loader } from './loader';
+export { Textarea } from './textarea';
 export type {
   AvatarProps,
   BadgeColor,
@@ -16,4 +17,5 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  TextareaProps,
 } from '@/types';

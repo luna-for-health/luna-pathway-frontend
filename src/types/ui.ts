@@ -18,6 +18,17 @@ export interface InputProps extends Omit<React.ComponentProps<'input'>, 'type'> 
 }
 
 /**
+ * Luna DS "Form/Textarea" primitive (node 12232:3792, DS file) — just the multiline
+ * field itself. `children` renders in the same rounded container below the field
+ * (Figma's own "slot" region), for callers that need to attach actions like
+ * `SymptomComposer`'s mic/skip/submit row — not baked into this shared component,
+ * since the DS's base Textarea has no such row itself.
+ */
+export interface TextareaProps extends React.ComponentProps<'textarea'> {
+  error?: boolean | string;
+}
+
+/**
  * Luna DS "Link" (node 12163:4884). Renders as a native `<a>` since it's meant to
  * navigate — pass `href`. `icon` defaults to a `ChevronRightIcon`, matching Figma's
  * demo (which shows chevrons by default on both sides); override or set
