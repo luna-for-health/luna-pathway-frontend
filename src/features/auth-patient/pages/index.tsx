@@ -1,4 +1,5 @@
 import LoginScreen from './login-screen';
+import OtpScreen from './otp-screen';
 import WelcomeScreen from './welcome-screen';
 
-export { LoginScreen, WelcomeScreen };
+export { LoginScreen, OtpScreen, WelcomeScreen };

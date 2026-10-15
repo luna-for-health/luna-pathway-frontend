@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { LoginScreen, WelcomeScreen } from '@/features/auth-patient/pages';
+import { LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
 
 export const router = createBrowserRouter([
   {
@@ -10,5 +10,9 @@ export const router = createBrowserRouter([
   {
     path: '/login',
     element: <LoginScreen />,
+  },
+  {
+    path: '/otp',
+    element: <OtpScreen />,
   },
 ]);
