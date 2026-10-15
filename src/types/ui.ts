@@ -30,6 +30,19 @@ export interface LoaderProps extends React.ComponentProps<'div'> {
   variant?: 'arc' | 'spokes';
 }
 
+export interface ChipProps extends Omit<React.ComponentProps<'button'>, 'onChange'> {
+  label: string;
+  onRemove?: () => void;
+}
+
+export interface FilterChipProps extends Omit<React.ComponentProps<'button'>, 'onChange'> {
+  /** Omit to render the icon-only trigger. */
+  label?: string;
+  state?: 'enabled' | 'activated';
+  /** Shown as a badge when `state="activated"`. */
+  count?: number;
+}
+
 export type BadgeColor =
   'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
 

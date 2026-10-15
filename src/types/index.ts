@@ -3,6 +3,8 @@ export type {
   BadgeNotificationProps,
   BadgeProps,
   ButtonProps,
+  ChipProps,
+  FilterChipProps,
   LinkProps,
   LoaderProps,
 } from './ui';
