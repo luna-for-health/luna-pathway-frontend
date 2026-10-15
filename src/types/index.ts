@@ -1,4 +1,5 @@
 export type {
+  AvatarProps,
   BadgeColor,
   BadgeNotificationProps,
   BadgeProps,

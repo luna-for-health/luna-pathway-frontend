@@ -30,6 +30,14 @@ export interface LoaderProps extends React.ComponentProps<'div'> {
   variant?: 'arc' | 'spokes';
 }
 
+export interface AvatarProps extends React.ComponentProps<'div'> {
+  /** Profile photo URL. Falls back to `name`'s initial when omitted. */
+  src?: string;
+  alt?: string;
+  /** Used for the initials fallback (first character rendered). Defaults to "A". */
+  name?: string;
+}
+
 export interface ChipProps extends Omit<React.ComponentProps<'button'>, 'onChange'> {
   label: string;
   onRemove?: () => void;
