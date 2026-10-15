@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
+import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
 
 export const router = createBrowserRouter([
   {
@@ -10,6 +10,10 @@ export const router = createBrowserRouter([
   {
     path: '/login',
     element: <LoginScreen />,
+  },
+  {
+    path: '/gdpr',
+    element: <GdprScreen />,
   },
   {
     path: '/otp',

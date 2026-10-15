@@ -1,5 +1,6 @@
+import GdprScreen from './gdpr-screen';
 import LoginScreen from './login-screen';
 import OtpScreen from './otp-screen';
 import WelcomeScreen from './welcome-screen';
 
-export { LoginScreen, OtpScreen, WelcomeScreen };
+export { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen };
