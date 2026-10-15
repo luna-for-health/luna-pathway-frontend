@@ -14,6 +14,7 @@ export { Link } from './link';
 export { List, ListItem } from './list-item';
 export { Loader } from './loader';
 export { LoadingOverlay } from './loading-overlay';
+export { Menu, MenuItem } from './menu-item';
 export { Option, OptionList } from './option-list';
 export { Radio } from './radio';
 export { RadioGroup } from './radio-group';
@@ -48,6 +49,8 @@ export type {
   ListProps,
   LoaderProps,
   LoadingOverlayProps,
+  MenuItemProps,
+  MenuProps,
   OptionListProps,
   OptionProps,
   RadioGroupProps,

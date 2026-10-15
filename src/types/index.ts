@@ -22,6 +22,8 @@ export type {
   ListProps,
   LoaderProps,
   LoadingOverlayProps,
+  MenuItemProps,
+  MenuProps,
   OptionListProps,
   OptionProps,
   RadioGroupProps,

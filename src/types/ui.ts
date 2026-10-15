@@ -58,6 +58,25 @@ export interface OptionProps extends Omit<React.ComponentProps<'button'>, 'onCha
 export type OptionListProps = React.ComponentProps<'div'>;
 
 /**
+ * Luna DS "MenuItem" (node 12167:5296, DS file). `Menu` is a thin flex-column
+ * wrapper for grouping `MenuItem`s — not itself a distinct Figma component (the DS
+ * page only names the states-table frame "Menu"), added for the same grouping
+ * convenience as `OptionList`/`Option`.
+ */
+export interface MenuItemProps extends Omit<React.ComponentProps<'button'>, 'color'> {
+  label: string;
+  color?: 'neutral' | 'danger';
+  /** Ignored when `color="danger"` — Figma's danger variant has no selected state. */
+  selected?: boolean;
+  icon?: React.ReactNode;
+  trailingIcon?: React.ReactNode;
+  /** Trailing count/badge text, e.g. an unread count. */
+  number?: string;
+}
+
+export type MenuProps = React.ComponentProps<'div'>;
+
+/**
  * Luna DS "SearchBar" (node 12224:693, DS file). Structurally close to `Input`
  * (same `h-14`/`rounded-lg`/`gap-3` field-box proportions) but with a fixed
  * leading search icon instead of a configurable one, and no label/error states.
