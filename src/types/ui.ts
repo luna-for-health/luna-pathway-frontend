@@ -29,6 +29,23 @@ export interface TextareaProps extends React.ComponentProps<'textarea'> {
 }
 
 /**
+ * Luna DS "Form/Field" primitive (node 12232:3466, DS file) — generic label + helper
+ * caption wrapper around a form control passed as `children`. Doesn't reimplement
+ * Figma's per-variant switch (textfield/select/segmented/password); callers compose
+ * it with `Textarea`, `Input`, etc.
+ */
+export interface FieldProps extends Omit<React.ComponentProps<'div'>, 'children'> {
+  label?: string;
+  /** Renders the mandatory dot next to the label. */
+  required?: boolean;
+  htmlFor?: string;
+  /** Neutral caption shown below the field. Overridden by a string `error`. */
+  helperText?: string;
+  error?: boolean | string;
+  children: React.ReactNode;
+}
+
+/**
  * Luna DS "Link" (node 12163:4884). Renders as a native `<a>` since it's meant to
  * navigate — pass `href`. `icon` defaults to a `ChevronRightIcon`, matching Figma's
  * demo (which shows chevrons by default on both sides); override or set

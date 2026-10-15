@@ -5,6 +5,7 @@ export type {
   BadgeProps,
   ButtonProps,
   ChipProps,
+  FieldProps,
   FilterChipProps,
   InputProps,
   LinkProps,
