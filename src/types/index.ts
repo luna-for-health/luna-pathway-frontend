@@ -17,6 +17,8 @@ export type {
   RadioGroupProps,
   RadioProps,
   SearchBarProps,
+  SegmentedButtonProps,
+  SegmentedItemProps,
   SelectProps,
   SwitchProps,
   TextareaProps,

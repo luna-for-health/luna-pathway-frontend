@@ -53,6 +53,20 @@ export interface FieldProps extends Omit<React.ComponentProps<'div'>, 'children'
 export type SearchBarProps = Omit<React.ComponentProps<'input'>, 'type'>;
 
 /**
+ * Luna DS "SegmentedButton" (secretary inbox top-nav, node 7497:271) — a pill-group
+ * filter, distinct from `Tabs`'s underline style. `SegmentedButton` is just the row
+ * wrapper; each `SegmentedItem` carries its own `active` state (same state-derived class
+ * swap pattern as `TabsItem`/`Option`/`FilterChip`), not a literal Figma variant passthrough.
+ */
+export type SegmentedButtonProps = React.ComponentProps<'div'>;
+
+export interface SegmentedItemProps extends Omit<React.ComponentProps<'button'>, 'color'> {
+  label: string;
+  count?: number;
+  active?: boolean;
+}
+
+/**
  * Luna DS "Link" (node 12163:4884). Renders as a native `<a>` since it's meant to
  * navigate — pass `href`. `icon` defaults to a `ChevronRightIcon`, matching Figma's
  * demo (which shows chevrons by default on both sides); override or set

@@ -11,6 +11,7 @@ export { Loader } from './loader';
 export { Radio } from './radio';
 export { RadioGroup } from './radio-group';
 export { SearchBar } from './search-bar';
+export { SegmentedButton, SegmentedItem } from './segmented-button';
 export { Select } from './select';
 export { Switch } from './switch';
 export { Textarea } from './textarea';
@@ -33,6 +34,8 @@ export type {
   RadioGroupProps,
   RadioProps,
   SearchBarProps,
+  SegmentedButtonProps,
+  SegmentedItemProps,
   SelectProps,
   SwitchProps,
   TextareaProps,
