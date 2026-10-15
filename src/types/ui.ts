@@ -84,6 +84,17 @@ export type MenuProps = React.ComponentProps<'div'>;
 export type SearchBarProps = Omit<React.ComponentProps<'input'>, 'type'>;
 
 /**
+ * Luna DS "TabsItem" (node 12214:711x variants) + "Tabs" (node 12215:7252, the row
+ * wrapper — genuinely Figma-sourced here, unlike `Menu`/`OptionList`'s wrappers).
+ */
+export interface TabsItemProps extends Omit<React.ComponentProps<'button'>, 'color'> {
+  label: string;
+  active?: boolean;
+}
+
+export type TabsProps = React.ComponentProps<'div'>;
+
+/**
  * Luna DS "SegmentedButton" (secretary inbox top-nav, node 7497:271) — a pill-group
  * filter, distinct from `Tabs`'s underline style. `SegmentedButton` is just the row
  * wrapper; each `SegmentedItem` carries its own `active` state (same state-derived class

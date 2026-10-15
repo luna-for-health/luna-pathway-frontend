@@ -23,6 +23,7 @@ export { SegmentedButton, SegmentedItem } from './segmented-button';
 export { Select } from './select';
 export { Sheet } from './sheet';
 export { Switch } from './switch';
+export { Tabs, TabsItem } from './tabs';
 export { Textarea } from './textarea';
 export { Toast } from './toast';
 export type {
@@ -61,6 +62,8 @@ export type {
   SelectProps,
   SheetProps,
   SwitchProps,
+  TabsItemProps,
+  TabsProps,
   TextareaProps,
   ToastProps,
 } from '@/types';

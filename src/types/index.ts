@@ -34,6 +34,8 @@ export type {
   SelectProps,
   SheetProps,
   SwitchProps,
+  TabsItemProps,
+  TabsProps,
   TextareaProps,
   ToastProps,
 } from './ui';
