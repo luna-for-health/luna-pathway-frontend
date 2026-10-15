@@ -11,6 +11,7 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  RadioGroupProps,
   RadioProps,
   TextareaProps,
 } from './ui';

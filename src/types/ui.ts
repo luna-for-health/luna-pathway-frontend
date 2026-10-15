@@ -70,6 +70,8 @@ export interface RadioProps extends Omit<React.ComponentProps<'input'>, 'type' |
   label?: React.ReactNode;
 }
 
+export type RadioGroupProps = React.ComponentProps<'div'>;
+
 export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
   label?: React.ReactNode;
   indeterminate?: boolean;

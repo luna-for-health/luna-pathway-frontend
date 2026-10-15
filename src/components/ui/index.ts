@@ -8,6 +8,7 @@ export { Input } from './input';
 export { Link } from './link';
 export { Loader } from './loader';
 export { Radio } from './radio';
+export { RadioGroup } from './radio-group';
 export { Textarea } from './textarea';
 export type {
   AvatarProps,
@@ -22,6 +23,7 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  RadioGroupProps,
   RadioProps,
   TextareaProps,
 } from '@/types';
