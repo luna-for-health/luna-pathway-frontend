@@ -31,6 +31,7 @@ export { SearchBar } from './search-bar';
 export { SegmentedButton, SegmentedItem } from './segmented-button';
 export { Select } from './select';
 export { Sheet } from './sheet';
+export { SSOButton } from './sso-button';
 export { Switch } from './switch';
 export { Tabs, TabsItem } from './tabs';
 export { Textarea } from './textarea';
@@ -70,6 +71,7 @@ export type {
   SegmentedItemProps,
   SelectProps,
   SheetProps,
+  SSOButtonProps,
   SwitchProps,
   TabsItemProps,
   TabsProps,

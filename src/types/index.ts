@@ -33,6 +33,7 @@ export type {
   SegmentedItemProps,
   SelectProps,
   SheetProps,
+  SSOButtonProps,
   SwitchProps,
   TabsItemProps,
   TabsProps,

@@ -182,6 +182,13 @@ export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type
   indeterminate?: boolean;
 }
 
+export interface SSOButtonProps extends Omit<
+  ButtonProps,
+  'variant' | 'size' | 'children' | 'asChild'
+> {
+  provider: 'google' | 'apple';
+}
+
 export interface LoaderProps extends React.ComponentProps<'div'> {
   color?: string;
   /** Ring thickness as a percentage of the radius that stays hollow (0-100). Higher = thinner ring. Defaults to 78. */
