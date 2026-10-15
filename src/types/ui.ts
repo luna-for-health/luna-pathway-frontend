@@ -58,6 +58,18 @@ export interface LinkProps extends Omit<React.ComponentProps<'a'>, 'color'> {
   iconPosition?: 'left' | 'right' | 'both' | 'none';
 }
 
+/**
+ * Luna DS "Radio" (node 12232:4303, DS file). The ring/dot are plain CSS (border +
+ * inner circle), not a ported SVG — Figma's traced ring asset is proxy-blocked here
+ * like every other icon in this doc, and a two-tone ring is trivial to build without
+ * one. `--color-form-radio-border`/`-border-disabled` are therefore a visual estimate
+ * from the screenshot (matching `Checkbox`'s analogous unchecked/disabled border
+ * values), not a hex confirmed via `get_design_context` — flagged in COMPONENTS.md.
+ */
+export interface RadioProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
+  label?: React.ReactNode;
+}
+
 export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
   label?: React.ReactNode;
   indeterminate?: boolean;

@@ -7,6 +7,7 @@ export { Field } from './field';
 export { Input } from './input';
 export { Link } from './link';
 export { Loader } from './loader';
+export { Radio } from './radio';
 export { Textarea } from './textarea';
 export type {
   AvatarProps,
@@ -21,5 +22,6 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  RadioProps,
   TextareaProps,
 } from '@/types';

@@ -11,6 +11,7 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  RadioProps,
   TextareaProps,
 } from './ui';
 export type { IconColorToken, IconProps, IconSize } from './icon';
