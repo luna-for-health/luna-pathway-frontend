@@ -18,6 +18,8 @@ export type {
   FilterChipProps,
   InputProps,
   LinkProps,
+  ListItemProps,
+  ListProps,
   LoaderProps,
   LoadingOverlayProps,
   OptionListProps,

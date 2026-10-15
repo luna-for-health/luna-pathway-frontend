@@ -92,6 +92,23 @@ export interface LinkProps extends Omit<React.ComponentProps<'a'>, 'color'> {
 }
 
 /**
+ * Luna DS "List" (node 12163:4895) — despite the Figma name, this is a single
+ * selectable row, not the group; renamed `ListItem` here for clarity, paired with a
+ * `List` grouping wrapper, matching the `MenuItem`/`Menu` naming convention.
+ * Figma's `variantIcon: "default" | "light"` variants are visually identical once
+ * `icon` is caller-supplied rather than auto-generated, so they're collapsed into
+ * one — only `danger` changes actual styling.
+ */
+export interface ListItemProps extends Omit<React.ComponentProps<'button'>, 'color'> {
+  label: string;
+  danger?: boolean;
+  icon?: React.ReactNode;
+  hasArrow?: boolean;
+}
+
+export type ListProps = React.ComponentProps<'div'>;
+
+/**
  * Luna DS "Radio" (node 12232:4303, DS file). The ring/dot are plain CSS (border +
  * inner circle), not a ported SVG — Figma's traced ring asset is proxy-blocked here
  * like every other icon in this doc, and a two-tone ring is trivial to build without

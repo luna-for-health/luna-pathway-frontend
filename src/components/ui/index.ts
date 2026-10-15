@@ -11,6 +11,7 @@ export { EvaScoreBar, EvaSlider, getEvaLevel } from './eva-slider';
 export { Field } from './field';
 export { Input } from './input';
 export { Link } from './link';
+export { List, ListItem } from './list-item';
 export { Loader } from './loader';
 export { LoadingOverlay } from './loading-overlay';
 export { Option, OptionList } from './option-list';
@@ -43,6 +44,8 @@ export type {
   FilterChipProps,
   InputProps,
   LinkProps,
+  ListItemProps,
+  ListProps,
   LoaderProps,
   LoadingOverlayProps,
   OptionListProps,
