@@ -27,5 +27,6 @@ export type {
   SheetProps,
   SwitchProps,
   TextareaProps,
+  ToastProps,
 } from './ui';
 export type { IconColorToken, IconProps, IconSize } from './icon';

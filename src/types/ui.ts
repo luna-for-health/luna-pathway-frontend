@@ -163,6 +163,12 @@ export interface FilterChipProps extends Omit<React.ComponentProps<'button'>, 'o
   count?: number;
 }
 
+export interface ToastProps extends React.ComponentProps<'div'> {
+  label: string;
+  onClose?: () => void;
+  icon?: React.ReactNode;
+}
+
 /**
  * Luna DS "Dialog" (node 12167:5177 validation / 12167:5186 danger, DS file).
  * Overlay/portal/focus-trap delegated to radix-ui's `Dialog` — see `dialog.tsx`

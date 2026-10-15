@@ -19,6 +19,7 @@ export { Select } from './select';
 export { Sheet } from './sheet';
 export { Switch } from './switch';
 export { Textarea } from './textarea';
+export { Toast } from './toast';
 export type {
   AvatarProps,
   BadgeColor,
@@ -48,4 +49,5 @@ export type {
   SheetProps,
   SwitchProps,
   TextareaProps,
+  ToastProps,
 } from '@/types';
