@@ -46,6 +46,18 @@ export interface FieldProps extends Omit<React.ComponentProps<'div'>, 'children'
 }
 
 /**
+ * Luna DS "Form/OptionList" primitive (node 15125:2194, DS file) — pill-style
+ * single option. Only the text variant is built; the avatar/image-tile picker
+ * variant on the same Figma page is out of scope for now.
+ */
+export interface OptionProps extends Omit<React.ComponentProps<'button'>, 'onChange'> {
+  label: string;
+  selected?: boolean;
+}
+
+export type OptionListProps = React.ComponentProps<'div'>;
+
+/**
  * Luna DS "SearchBar" (node 12224:693, DS file). Structurally close to `Input`
  * (same `h-14`/`rounded-lg`/`gap-3` field-box proportions) but with a fixed
  * leading search icon instead of a configurable one, and no label/error states.

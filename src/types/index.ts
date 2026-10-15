@@ -14,6 +14,8 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  OptionListProps,
+  OptionProps,
   RadioGroupProps,
   RadioProps,
   SearchBarProps,

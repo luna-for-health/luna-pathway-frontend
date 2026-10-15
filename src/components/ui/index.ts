@@ -8,6 +8,7 @@ export { Field } from './field';
 export { Input } from './input';
 export { Link } from './link';
 export { Loader } from './loader';
+export { Option, OptionList } from './option-list';
 export { Radio } from './radio';
 export { RadioGroup } from './radio-group';
 export { SearchBar } from './search-bar';
@@ -31,6 +32,8 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  OptionListProps,
+  OptionProps,
   RadioGroupProps,
   RadioProps,
   SearchBarProps,
