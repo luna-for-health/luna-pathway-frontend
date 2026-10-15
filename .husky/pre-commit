@@ -1,0 +1,7 @@
+# Block commits that contain secrets (API keys, tokens, .env values...).
+# Install gitleaks once: brew install gitleaks
+if command -v gitleaks >/dev/null 2>&1; then
+  gitleaks git --pre-commit --staged --redact --verbose
+else
+  echo "⚠️  gitleaks is not installed — secret scan skipped. Install it with: brew install gitleaks"
+fi
