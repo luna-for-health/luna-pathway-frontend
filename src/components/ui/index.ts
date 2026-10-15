@@ -4,6 +4,7 @@ export { Button, buttonVariants } from './button';
 export { Checkbox } from './checkbox';
 export { Chip, FilterChip } from './chip';
 export { Dialog } from './dialog';
+export { Dropdown } from './dropdown';
 export { EvaScoreBar, EvaSlider, getEvaLevel } from './eva-slider';
 export { Field } from './field';
 export { Input } from './input';
@@ -27,6 +28,7 @@ export type {
   CheckboxProps,
   ChipProps,
   DialogProps,
+  DropdownProps,
   EvaLevel,
   EvaScoreBarProps,
   EvaSliderProps,

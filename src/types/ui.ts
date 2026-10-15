@@ -204,6 +204,23 @@ export interface SheetProps {
   children?: React.ReactNode;
 }
 
+/**
+ * Luna DS "DropdownMenu" (node 12167:5552 / 12167:5558, DS file) — a popover panel,
+ * built on radix-ui's `Popover` for positioning/portal/dismiss. Pass a `<Menu>` of
+ * `<MenuItem>`s as `children` — see `dropdown.tsx`.
+ */
+export interface DropdownProps {
+  open?: boolean;
+  defaultOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  trigger: React.ReactNode;
+  align?: 'start' | 'center' | 'end';
+  side?: 'top' | 'right' | 'bottom' | 'left';
+  sideOffset?: number;
+  className?: string;
+  children?: React.ReactNode;
+}
+
 export type BadgeColor =
   'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
 
