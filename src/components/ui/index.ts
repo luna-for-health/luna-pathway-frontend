@@ -15,6 +15,7 @@ export { RadioGroup } from './radio-group';
 export { SearchBar } from './search-bar';
 export { SegmentedButton, SegmentedItem } from './segmented-button';
 export { Select } from './select';
+export { Sheet } from './sheet';
 export { Switch } from './switch';
 export { Textarea } from './textarea';
 export type {
@@ -42,6 +43,7 @@ export type {
   SegmentedButtonProps,
   SegmentedItemProps,
   SelectProps,
+  SheetProps,
   SwitchProps,
   TextareaProps,
 } from '@/types';

@@ -23,6 +23,7 @@ export type {
   SegmentedButtonProps,
   SegmentedItemProps,
   SelectProps,
+  SheetProps,
   SwitchProps,
   TextareaProps,
 } from './ui';

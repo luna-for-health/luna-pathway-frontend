@@ -187,6 +187,23 @@ export interface DialogProps {
   children?: React.ReactNode;
 }
 
+/**
+ * Luna DS "Sheet" (node 13220:969 `bar` / 12909:967 `close-button` / 16360:771
+ * `sm-close-button`, DS file) — a bottom sheet built on the same radix-ui `Dialog`
+ * primitives as `Dialog`. `title` is always required for accessibility even when
+ * a variant doesn't render it visually — see `sheet.tsx`.
+ */
+export interface SheetProps {
+  open?: boolean;
+  defaultOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  trigger?: React.ReactNode;
+  title: string;
+  variant?: 'bar' | 'close-button' | 'sm-close-button' | 'modal-md';
+  className?: string;
+  children?: React.ReactNode;
+}
+
 export type BadgeColor =
   'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
 
