@@ -13,6 +13,7 @@ export type {
   LoaderProps,
   RadioGroupProps,
   RadioProps,
+  SelectProps,
   SwitchProps,
   TextareaProps,
 } from './ui';

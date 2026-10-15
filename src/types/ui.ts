@@ -85,6 +85,18 @@ export interface SwitchProps extends Omit<React.ComponentProps<'button'>, 'onCha
   label?: React.ReactNode;
 }
 
+/**
+ * Luna DS "Select" (node 12312:1153, DS file) — the field/trigger only, wrapping a
+ * native `<select>` (same "wrap a native form control" approach as `Input`/
+ * `Textarea`). Figma's custom option-list panel (avatar/badge-decorated rows, its
+ * own open/close overlay) is **not** built here — deferred to the future "Dialog /
+ * Sheet / Dropdown components" task, which owns shared overlay/portal logic.
+ */
+export interface SelectProps extends Omit<React.ComponentProps<'select'>, 'size'> {
+  error?: boolean | string;
+  placeholder?: string;
+}
+
 export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
   label?: React.ReactNode;
   indeterminate?: boolean;
