@@ -3,6 +3,15 @@ export { Avatar } from './avatar';
 export { Badge, BadgeNotification } from './badge';
 export { Button, buttonVariants } from './button';
 export { Card } from './card';
+export {
+  Carousel,
+  CarouselContent,
+  CarouselDots,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  useCarousel,
+} from './carousel';
 export { Checkbox } from './checkbox';
 export { Chip, FilterChip } from './chip';
 export { Dialog } from './dialog';
@@ -67,3 +76,4 @@ export type {
   TextareaProps,
   ToastProps,
 } from '@/types';
+export type { CarouselApi } from './carousel';
