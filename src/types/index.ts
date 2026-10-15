@@ -13,6 +13,7 @@ export type {
   LoaderProps,
   RadioGroupProps,
   RadioProps,
+  SwitchProps,
   TextareaProps,
 } from './ui';
 export type { IconColorToken, IconProps, IconSize } from './icon';

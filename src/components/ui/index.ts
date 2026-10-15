@@ -9,6 +9,7 @@ export { Link } from './link';
 export { Loader } from './loader';
 export { Radio } from './radio';
 export { RadioGroup } from './radio-group';
+export { Switch } from './switch';
 export { Textarea } from './textarea';
 export type {
   AvatarProps,
@@ -25,5 +26,6 @@ export type {
   LoaderProps,
   RadioGroupProps,
   RadioProps,
+  SwitchProps,
   TextareaProps,
 } from '@/types';

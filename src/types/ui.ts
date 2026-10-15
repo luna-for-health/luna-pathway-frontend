@@ -72,6 +72,19 @@ export interface RadioProps extends Omit<React.ComponentProps<'input'>, 'type' |
 
 export type RadioGroupProps = React.ComponentProps<'div'>;
 
+/**
+ * Luna DS "Switch" (node 12232:3691, DS file). Figma renders the toggle itself as a
+ * `<button>`, not a checkbox input — ported the same way, as `role="switch"` with
+ * `aria-checked`, controlled/uncontrolled via `checked`/`onCheckedChange` (not a
+ * native `onChange` event, since there's no underlying `<input>`).
+ */
+export interface SwitchProps extends Omit<React.ComponentProps<'button'>, 'onChange' | 'value'> {
+  checked?: boolean;
+  defaultChecked?: boolean;
+  onCheckedChange?: (checked: boolean) => void;
+  label?: React.ReactNode;
+}
+
 export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
   label?: React.ReactNode;
   indeterminate?: boolean;
