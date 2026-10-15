@@ -10,6 +10,13 @@ export interface ButtonProps
   loading?: boolean;
 }
 
+export interface InputProps extends Omit<React.ComponentProps<'input'>, 'type'> {
+  label?: string;
+  icon?: React.ReactNode;
+  error?: boolean | string;
+  type?: React.HTMLInputTypeAttribute;
+}
+
 /**
  * Luna DS "Link" (node 12163:4884). Renders as a native `<a>` since it's meant to
  * navigate — pass `href`. `icon` defaults to a `ChevronRightIcon`, matching Figma's

@@ -6,6 +6,7 @@ export type {
   ButtonProps,
   ChipProps,
   FilterChipProps,
+  InputProps,
   LinkProps,
   LoaderProps,
 } from './ui';
