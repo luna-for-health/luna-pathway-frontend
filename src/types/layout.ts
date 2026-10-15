@@ -15,3 +15,19 @@ export type WebHeaderProps = React.ComponentProps<'header'> & {
    */
   centerContent?: React.ReactNode;
 };
+
+export interface MainNavItemProps extends Omit<React.ComponentProps<'a'>, 'href' | 'children'> {
+  to: string;
+  label: string;
+  /**
+   * Receives whether this item's route is the active one, so icons whose color depends on
+   * nav state (e.g. semantic `IconProps`/`useIcon`-based icons) can react to it. Icons that
+   * inherit color via `currentColor` from the surrounding `text-mainnav-*` class can ignore
+   * the argument.
+   */
+  icon: (isActive: boolean) => React.ReactNode;
+  /** Full-width vertical layout for the mobile dropdown. Defaults to the desktop pill layout. */
+  mobile?: boolean;
+}
+
+export type MainNavProps = React.ComponentProps<'div'>;
