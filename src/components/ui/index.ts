@@ -1,3 +1,4 @@
+export { Alert } from './alert';
 export { Avatar } from './avatar';
 export { Badge, BadgeNotification } from './badge';
 export { Button, buttonVariants } from './button';
@@ -21,6 +22,8 @@ export { Switch } from './switch';
 export { Textarea } from './textarea';
 export { Toast } from './toast';
 export type {
+  AlertProps,
+  AlertType,
   AvatarProps,
   BadgeColor,
   BadgeNotificationProps,

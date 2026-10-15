@@ -227,6 +227,14 @@ export interface DropdownProps {
   children?: React.ReactNode;
 }
 
+export type AlertType = 'success' | 'info' | 'warning' | 'danger';
+
+export interface AlertProps extends Omit<React.ComponentProps<'div'>, 'title'> {
+  type?: AlertType;
+  title?: string;
+  description?: string;
+}
+
 export type BadgeColor =
   'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
 
