@@ -4,6 +4,7 @@ export type {
   BadgeNotificationProps,
   BadgeProps,
   ButtonProps,
+  CheckboxProps,
   ChipProps,
   FieldProps,
   FilterChipProps,

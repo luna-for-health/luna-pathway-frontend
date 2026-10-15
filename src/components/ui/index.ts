@@ -1,6 +1,7 @@
 export { Avatar } from './avatar';
 export { Badge, BadgeNotification } from './badge';
 export { Button, buttonVariants } from './button';
+export { Checkbox } from './checkbox';
 export { Chip, FilterChip } from './chip';
 export { Field } from './field';
 export { Input } from './input';
@@ -13,6 +14,7 @@ export type {
   BadgeNotificationProps,
   BadgeProps,
   ButtonProps,
+  CheckboxProps,
   ChipProps,
   FieldProps,
   FilterChipProps,

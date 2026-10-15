@@ -58,6 +58,11 @@ export interface LinkProps extends Omit<React.ComponentProps<'a'>, 'color'> {
   iconPosition?: 'left' | 'right' | 'both' | 'none';
 }
 
+export interface CheckboxProps extends Omit<React.ComponentProps<'input'>, 'type' | 'size'> {
+  label?: React.ReactNode;
+  indeterminate?: boolean;
+}
+
 export interface LoaderProps extends React.ComponentProps<'div'> {
   color?: string;
   /** Ring thickness as a percentage of the radius that stays hollow (0-100). Higher = thinner ring. Defaults to 78. */
