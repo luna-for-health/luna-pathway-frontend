@@ -11,6 +11,7 @@ export { Field } from './field';
 export { Input } from './input';
 export { Link } from './link';
 export { Loader } from './loader';
+export { LoadingOverlay } from './loading-overlay';
 export { Option, OptionList } from './option-list';
 export { Radio } from './radio';
 export { RadioGroup } from './radio-group';
@@ -41,6 +42,7 @@ export type {
   InputProps,
   LinkProps,
   LoaderProps,
+  LoadingOverlayProps,
   OptionListProps,
   OptionProps,
   RadioGroupProps,

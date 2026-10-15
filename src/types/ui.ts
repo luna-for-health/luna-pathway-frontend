@@ -142,6 +142,10 @@ export interface LoaderProps extends React.ComponentProps<'div'> {
   variant?: 'arc' | 'spokes';
 }
 
+export interface LoadingOverlayProps extends React.ComponentProps<'div'> {
+  visible?: boolean;
+}
+
 export interface AvatarProps extends React.ComponentProps<'div'> {
   /** Profile photo URL. Falls back to `name`'s initial when omitted. */
   src?: string;
