@@ -1,2 +1,3 @@
+export { Button, buttonVariants } from './button';
 export { Loader } from './loader';
-export type { LoaderProps } from '@/types';
+export type { ButtonProps, LoaderProps } from '@/types';
