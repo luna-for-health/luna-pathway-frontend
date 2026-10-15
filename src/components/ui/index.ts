@@ -1,3 +1,4 @@
 export { Button, buttonVariants } from './button';
+export { Link } from './link';
 export { Loader } from './loader';
-export type { ButtonProps, LoaderProps } from '@/types';
+export type { ButtonProps, LinkProps, LoaderProps } from '@/types';
