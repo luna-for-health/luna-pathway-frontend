@@ -153,3 +153,22 @@ export interface BadgeNotificationProps extends React.ComponentProps<'div'> {
   color?: 'pink' | 'wireframe';
   count?: number | string;
 }
+
+/** Intensity bucket of an EVA (échelle visuelle analogique) 0–10 score — drives the slider
+ * fill/thumb color and the score label. `none` = 0 (symptom absent, no label shown). */
+export type EvaLevel = 'none' | 'low' | 'medium' | 'high';
+
+export interface EvaScoreBarProps {
+  /** EVA score, 0–10. */
+  value: number;
+  className?: string;
+}
+
+export interface EvaSliderProps {
+  title: string;
+  description?: string;
+  value: number;
+  onValueChange: (value: number) => void;
+  disabled?: boolean;
+  className?: string;
+}

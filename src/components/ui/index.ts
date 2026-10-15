@@ -3,6 +3,7 @@ export { Badge, BadgeNotification } from './badge';
 export { Button, buttonVariants } from './button';
 export { Checkbox } from './checkbox';
 export { Chip, FilterChip } from './chip';
+export { EvaScoreBar, EvaSlider, getEvaLevel } from './eva-slider';
 export { Field } from './field';
 export { Input } from './input';
 export { Link } from './link';
@@ -21,6 +22,9 @@ export type {
   ButtonProps,
   CheckboxProps,
   ChipProps,
+  EvaLevel,
+  EvaScoreBarProps,
+  EvaSliderProps,
   FieldProps,
   FilterChipProps,
   InputProps,
