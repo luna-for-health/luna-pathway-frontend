@@ -1,9 +1,9 @@
+import { RouterProvider } from 'react-router-dom';
+
+import { router } from '@/routes';
+
 function App() {
-  return (
-    <main className="flex min-h-svh items-center justify-center">
-      <h1 className="text-2xl font-bold">doctors-frontend</h1>
-    </main>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
