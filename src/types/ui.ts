@@ -29,3 +29,20 @@ export interface LoaderProps extends React.ComponentProps<'div'> {
   thickness?: number;
   variant?: 'arc' | 'spokes';
 }
+
+export type BadgeColor =
+  'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
+
+export interface BadgeProps extends React.ComponentProps<'div'> {
+  label: string;
+  color?: BadgeColor;
+  size?: 'sm' | 'md';
+  hasDot?: boolean;
+  /** Only rendered when `size="md"`. */
+  icon?: React.ReactNode;
+}
+
+export interface BadgeNotificationProps extends React.ComponentProps<'div'> {
+  color?: 'pink' | 'wireframe';
+  count?: number | string;
+}
