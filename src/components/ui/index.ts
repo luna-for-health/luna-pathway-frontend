@@ -2,6 +2,7 @@ export { Alert } from './alert';
 export { Avatar } from './avatar';
 export { Badge, BadgeNotification } from './badge';
 export { Button, buttonVariants } from './button';
+export { Card } from './card';
 export { Checkbox } from './checkbox';
 export { Chip, FilterChip } from './chip';
 export { Dialog } from './dialog';
@@ -30,6 +31,7 @@ export type {
   BadgeNotificationProps,
   BadgeProps,
   ButtonProps,
+  CardProps,
   CheckboxProps,
   ChipProps,
   DialogProps,

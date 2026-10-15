@@ -6,6 +6,7 @@ export type {
   BadgeNotificationProps,
   BadgeProps,
   ButtonProps,
+  CardProps,
   CheckboxProps,
   ChipProps,
   DialogProps,

@@ -146,6 +146,10 @@ export interface LoadingOverlayProps extends React.ComponentProps<'div'> {
   visible?: boolean;
 }
 
+export interface CardProps extends React.ComponentProps<'div'> {
+  title?: string;
+}
+
 export interface AvatarProps extends React.ComponentProps<'div'> {
   /** Profile photo URL. Falls back to `name`'s initial when omitted. */
   src?: string;
