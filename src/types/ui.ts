@@ -46,6 +46,13 @@ export interface FieldProps extends Omit<React.ComponentProps<'div'>, 'children'
 }
 
 /**
+ * Luna DS "SearchBar" (node 12224:693, DS file). Structurally close to `Input`
+ * (same `h-14`/`rounded-lg`/`gap-3` field-box proportions) but with a fixed
+ * leading search icon instead of a configurable one, and no label/error states.
+ */
+export type SearchBarProps = Omit<React.ComponentProps<'input'>, 'type'>;
+
+/**
  * Luna DS "Link" (node 12163:4884). Renders as a native `<a>` since it's meant to
  * navigate — pass `href`. `icon` defaults to a `ChevronRightIcon`, matching Figma's
  * demo (which shows chevrons by default on both sides); override or set

@@ -13,6 +13,7 @@ export type {
   LoaderProps,
   RadioGroupProps,
   RadioProps,
+  SearchBarProps,
   SelectProps,
   SwitchProps,
   TextareaProps,
