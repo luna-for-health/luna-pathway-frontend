@@ -163,6 +163,30 @@ export interface FilterChipProps extends Omit<React.ComponentProps<'button'>, 'o
   count?: number;
 }
 
+/**
+ * Luna DS "Dialog" (node 12167:5177 validation / 12167:5186 danger, DS file).
+ * Overlay/portal/focus-trap delegated to radix-ui's `Dialog` — see `dialog.tsx`
+ * for the reasoning. `description` maps to Figma's "Question" content slot;
+ * `children` renders below it for callers needing richer content.
+ */
+export interface DialogProps {
+  open?: boolean;
+  defaultOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
+  /** Element that opens the dialog on click. Omit to control `open` externally. */
+  trigger?: React.ReactNode;
+  title: string;
+  description?: React.ReactNode;
+  type?: 'validation' | 'danger';
+  cancelLabel?: string;
+  /** Defaults to "Valider" (`type="validation"`) or "Supprimer" (`type="danger"`). */
+  confirmLabel?: string;
+  onCancel?: () => void;
+  onConfirm?: () => void;
+  className?: string;
+  children?: React.ReactNode;
+}
+
 export type BadgeColor =
   'success' | 'info' | 'warning' | 'danger' | 'primary' | 'secondary' | 'neutral';
 

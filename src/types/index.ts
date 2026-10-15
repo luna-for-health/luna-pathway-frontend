@@ -6,6 +6,7 @@ export type {
   ButtonProps,
   CheckboxProps,
   ChipProps,
+  DialogProps,
   EvaLevel,
   EvaScoreBarProps,
   EvaSliderProps,
