@@ -13,7 +13,7 @@ import {
   ResetPasswordSecretaryScreen,
 } from '@/features/auth-secretary/pages';
 import { DiagnosticIntro } from '@/features/diagnostic/components';
-import { DiagnosticIntroScreen } from '@/features/diagnostic/pages';
+import { ConsultationReasonScreen, DiagnosticIntroScreen } from '@/features/diagnostic/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
@@ -61,6 +61,10 @@ export const router = createBrowserRouter([
       {
         path: '/diagnostic/intro',
         element: <DiagnosticIntroScreen />,
+      },
+      {
+        path: '/diagnostic/step-2',
+        element: <ConsultationReasonScreen />,
       },
       {
         element: <AppLayout />,

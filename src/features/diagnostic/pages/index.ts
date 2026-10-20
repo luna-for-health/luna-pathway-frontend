@@ -1,3 +1,4 @@
+import ConsultationReasonScreen from './consultation-reason-screen';
 import DiagnosticIntroScreen from './diagnostic-intro-screen';
 
-export { DiagnosticIntroScreen };
+export { ConsultationReasonScreen, DiagnosticIntroScreen };
