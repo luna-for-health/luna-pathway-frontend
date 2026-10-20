@@ -1,6 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
+import { LoginSecretaryScreen } from '@/features/auth-secretary/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
@@ -36,5 +37,13 @@ export const router = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: '/pro/login',
+    element: <LoginSecretaryScreen />,
+  },
+  {
+    path: '/secretary/login',
+    element: <Navigate to="/pro/login" replace />,
   },
 ]);
