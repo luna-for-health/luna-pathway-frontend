@@ -1,6 +1,7 @@
 export { InboxDetailField } from './inbox-detail-field';
 export { InboxDetailNav } from './inbox-detail-nav';
 export { InboxDetailNavItem } from './inbox-detail-nav-item';
+export { InboxDetails } from './inbox-details';
 export { InboxDocuments } from './inbox-documents';
 export { InboxEmpty } from './inbox-empty';
 export { InboxList } from './inbox-list';
