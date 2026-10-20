@@ -4,6 +4,7 @@ import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/au
 import {
   ForgotPasswordSecretaryScreen,
   LoginSecretaryScreen,
+  ResetPasswordSecretaryScreen,
 } from '@/features/auth-secretary/pages';
 
 import AppLayout from './app-layout';
@@ -52,5 +53,9 @@ export const router = createBrowserRouter([
   {
     path: '/secretary/forgot-password',
     element: <ForgotPasswordSecretaryScreen />,
+  },
+  {
+    path: '/secretary/reset-password',
+    element: <ResetPasswordSecretaryScreen />,
   },
 ]);
