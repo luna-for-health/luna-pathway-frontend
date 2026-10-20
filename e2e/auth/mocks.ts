@@ -14,6 +14,7 @@ interface MockUser {
   id: number;
   email: string;
   has_accepted_gdpr: boolean;
+  has_completed_onboarding?: boolean;
 }
 
 function ok(data: unknown, message = 'OK') {
