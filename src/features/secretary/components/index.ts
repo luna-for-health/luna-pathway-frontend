@@ -6,6 +6,7 @@ export { InboxEmpty } from './inbox-empty';
 export { InboxList } from './inbox-list';
 export { InboxListItem } from './inbox-list-item';
 export { InboxPatientInfoCard } from './inbox-patient-info-card';
+export { InboxProcessedList } from './inbox-processed-list';
 export { InboxProcessedListItem } from './inbox-processed-list-item';
 export { InboxProcessRequestModal } from './inbox-process-request-modal';
 export { InboxReminderList } from './inbox-reminder-list';
