@@ -3,5 +3,6 @@ export { ConsultationReasonOption } from './consultation-reason-option';
 export { ConversationThread } from './conversation-thread';
 export { DiagnosticIntro } from './diagnostic-intro';
 export { DocumentRow } from './document-row';
+export { PatientStory } from './patient-story';
 export { SkillPicker } from './skill-picker';
 export { SummaryAnswer } from './summary-answer';
