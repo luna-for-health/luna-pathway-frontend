@@ -23,6 +23,7 @@ import {
   RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/diagnostic/pages';
+import { InboxScreen } from '@/features/secretary/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
@@ -132,6 +133,7 @@ export const router = createBrowserRouter([
       {
         element: <SecretaryLayout />,
         children: [
+          { path: '/secretary/inbox', element: <InboxScreen /> },
           { path: '/secretary/dossiers', element: <RoutePlaceholder title="Dossiers" /> },
           { path: '/secretary/compte', element: <RoutePlaceholder title="Mon compte" /> },
         ],
