@@ -41,4 +41,4 @@ export type {
   ToastProps,
 } from './ui';
 export type { IconColorToken, IconProps, IconSize } from './icon';
-export type { WebHeaderProps } from './layout';
+export type { MainNavItemProps, MainNavProps, WebHeaderProps } from './layout';
