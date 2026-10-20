@@ -14,3 +14,4 @@ export { InboxReminderList } from './inbox-reminder-list';
 export { InboxReminderListItem } from './inbox-reminder-list-item';
 export { InboxStatusIcon } from './inbox-status-icon';
 export { InboxSymptoms } from './inbox-symptoms';
+export { InboxView } from './inbox-view';
