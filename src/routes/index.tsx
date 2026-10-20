@@ -12,6 +12,17 @@ import {
   LoginSecretaryScreen,
   ResetPasswordSecretaryScreen,
 } from '@/features/auth-secretary/pages';
+import { DiagnosticIntro } from '@/features/diagnostic/components';
+import {
+  ConfirmationScreen,
+  ConsultationReasonScreen,
+  DiagnosticIntroScreen,
+  PatientDocumentsScreen,
+  PatientImagingScreen,
+  PatientStoryScreen,
+  RequestSummaryScreen,
+  SymptomIntensityScreen,
+} from '@/features/diagnostic/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
@@ -57,10 +68,43 @@ export const router = createBrowserRouter([
         element: <AccountStep4Screen />,
       },
       {
+        path: '/diagnostic/intro',
+        element: <DiagnosticIntroScreen />,
+      },
+      {
+        path: '/diagnostic/step-2',
+        element: <ConsultationReasonScreen />,
+      },
+      {
+        path: '/diagnostic/step-3',
+        element: <PatientStoryScreen />,
+      },
+      {
+        path: '/diagnostic/step-4',
+        element: <SymptomIntensityScreen />,
+      },
+      {
+        path: '/diagnostic/step-5',
+        element: <PatientImagingScreen />,
+      },
+      {
+        path: '/diagnostic/step-6',
+        element: <PatientDocumentsScreen />,
+      },
+      {
+        path: '/diagnostic/step-7',
+        element: <RequestSummaryScreen />,
+      },
+      {
+        path: '/diagnostic/confirmation',
+        element: <ConfirmationScreen />,
+      },
+      {
         element: <AppLayout />,
         children: [
           { path: '/home', element: <HomePlaceholder /> },
           { path: '/annuaire', element: <RoutePlaceholder title="Annuaire" /> },
+          { path: '/dossier', element: <DiagnosticIntro /> },
           { path: '/compte', element: <RoutePlaceholder title="Mon compte" /> },
         ],
       },
