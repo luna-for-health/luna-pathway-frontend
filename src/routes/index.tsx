@@ -19,6 +19,7 @@ import {
   PatientDocumentsScreen,
   PatientImagingScreen,
   PatientStoryScreen,
+  RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/diagnostic/pages';
 
@@ -88,6 +89,10 @@ export const router = createBrowserRouter([
       {
         path: '/diagnostic/step-6',
         element: <PatientDocumentsScreen />,
+      },
+      {
+        path: '/diagnostic/step-7',
+        element: <RequestSummaryScreen />,
       },
       {
         element: <AppLayout />,
