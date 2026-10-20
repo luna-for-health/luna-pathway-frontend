@@ -4,6 +4,7 @@ import {
   AccountStep1Screen,
   AccountStep2Screen,
   AccountStep3Screen,
+  AccountStep4Screen,
 } from '@/features/account/pages';
 import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
 import {
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
       {
         path: '/account/step-3',
         element: <AccountStep3Screen />,
+      },
+      {
+        path: '/account/step-4',
+        element: <AccountStep4Screen />,
       },
       {
         element: <AppLayout />,
