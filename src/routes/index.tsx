@@ -12,6 +12,8 @@ import {
   LoginSecretaryScreen,
   ResetPasswordSecretaryScreen,
 } from '@/features/auth-secretary/pages';
+import { DiagnosticIntro } from '@/features/diagnostic/components';
+import { DiagnosticIntroScreen } from '@/features/diagnostic/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
@@ -57,10 +59,15 @@ export const router = createBrowserRouter([
         element: <AccountStep4Screen />,
       },
       {
+        path: '/diagnostic/intro',
+        element: <DiagnosticIntroScreen />,
+      },
+      {
         element: <AppLayout />,
         children: [
           { path: '/home', element: <HomePlaceholder /> },
           { path: '/annuaire', element: <RoutePlaceholder title="Annuaire" /> },
+          { path: '/dossier', element: <DiagnosticIntro /> },
           { path: '/compte', element: <RoutePlaceholder title="Mon compte" /> },
         ],
       },
