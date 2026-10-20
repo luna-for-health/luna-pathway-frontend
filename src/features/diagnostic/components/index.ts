@@ -1,3 +1,4 @@
+export { Confirmation } from './confirmation';
 export { ConsultationReason } from './consultation-reason';
 export { ConsultationReasonOption } from './consultation-reason-option';
 export { ConversationThread } from './conversation-thread';
