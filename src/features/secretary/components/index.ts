@@ -2,6 +2,7 @@ export { InboxDetailField } from './inbox-detail-field';
 export { InboxDetailNavItem } from './inbox-detail-nav-item';
 export { InboxDocuments } from './inbox-documents';
 export { InboxEmpty } from './inbox-empty';
+export { InboxList } from './inbox-list';
 export { InboxListItem } from './inbox-list-item';
 export { InboxPatientInfoCard } from './inbox-patient-info-card';
 export { InboxProcessedListItem } from './inbox-processed-list-item';
