@@ -1,9 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
 
 /**
- * Scaffold-only config: one project per major engine, dev server auto-started
- * against Vite's default port, no test coverage authored yet beyond the
- * smoke test in `e2e/smoke.spec.ts` (proves the harness itself works).
+ * One project per major engine. The dev server is started in Vite's `test` mode on its own
+ * port: `test` mode does not load `.env.development`, so e2e runs never use real API, OAuth or
+ * Amplitude keys (every backend call is mocked in the specs), and behave the same locally, for
+ * contributors and in CI. The dedicated port keeps Playwright from reusing a regular
+ * `npm run dev` server on 5173.
  */
 export default defineConfig({
   testDir: './e2e',
@@ -13,7 +15,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:5173',
+    baseURL: 'http://localhost:5174',
     trace: 'on-first-retry',
   },
   projects: [
@@ -22,8 +24,8 @@ export default defineConfig({
     { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],
   webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:5173',
+    command: 'npm run dev -- --mode test --port 5174 --strictPort',
+    url: 'http://localhost:5174',
     reuseExistingServer: !process.env.CI,
   },
 });
