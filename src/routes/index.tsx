@@ -14,6 +14,7 @@ import {
 } from '@/features/auth-secretary/pages';
 import { DiagnosticIntro } from '@/features/diagnostic/components';
 import {
+  ConfirmationScreen,
   ConsultationReasonScreen,
   DiagnosticIntroScreen,
   PatientDocumentsScreen,
@@ -93,6 +94,10 @@ export const router = createBrowserRouter([
       {
         path: '/diagnostic/step-7',
         element: <RequestSummaryScreen />,
+      },
+      {
+        path: '/diagnostic/confirmation',
+        element: <ConfirmationScreen />,
       },
       {
         element: <AppLayout />,
