@@ -16,6 +16,7 @@ import { DiagnosticIntro } from '@/features/diagnostic/components';
 import {
   ConsultationReasonScreen,
   DiagnosticIntroScreen,
+  PatientImagingScreen,
   PatientStoryScreen,
   SymptomIntensityScreen,
 } from '@/features/diagnostic/pages';
@@ -78,6 +79,10 @@ export const router = createBrowserRouter([
       {
         path: '/diagnostic/step-4',
         element: <SymptomIntensityScreen />,
+      },
+      {
+        path: '/diagnostic/step-5',
+        element: <PatientImagingScreen />,
       },
       {
         element: <AppLayout />,
