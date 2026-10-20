@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
-import { AccountStep1Screen } from '@/features/account/pages';
+import { AccountStep1Screen, AccountStep2Screen } from '@/features/account/pages';
 import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
 import {
   ForgotPasswordSecretaryScreen,
@@ -38,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: '/account/step-1',
         element: <AccountStep1Screen />,
+      },
+      {
+        path: '/account/step-2',
+        element: <AccountStep2Screen />,
       },
       {
         element: <AppLayout />,
