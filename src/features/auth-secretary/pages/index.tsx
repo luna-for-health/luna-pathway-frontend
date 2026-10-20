@@ -1,3 +1,4 @@
+import ForgotPasswordSecretaryScreen from './forgot-password-secretary-screen';
 import LoginSecretaryScreen from './login-secretary-screen';
 
-export { LoginSecretaryScreen };
+export { ForgotPasswordSecretaryScreen, LoginSecretaryScreen };
