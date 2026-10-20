@@ -3,6 +3,7 @@ export { InboxDetailNavItem } from './inbox-detail-nav-item';
 export { InboxDocuments } from './inbox-documents';
 export { InboxEmpty } from './inbox-empty';
 export { InboxListItem } from './inbox-list-item';
+export { InboxPatientInfoCard } from './inbox-patient-info-card';
 export { InboxProcessedListItem } from './inbox-processed-list-item';
 export { InboxReminderListItem } from './inbox-reminder-list-item';
 export { InboxStatusIcon } from './inbox-status-icon';
