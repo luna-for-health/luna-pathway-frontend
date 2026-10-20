@@ -6,6 +6,7 @@ export { DocumentRow } from './document-row';
 export { PatientDocuments } from './patient-documents';
 export { PatientImaging } from './patient-imaging';
 export { PatientStory } from './patient-story';
+export { RequestSummary } from './request-summary';
 export { SkillPicker } from './skill-picker';
 export { SummaryAnswer } from './summary-answer';
 export { SymptomIntensity } from './symptom-intensity';
