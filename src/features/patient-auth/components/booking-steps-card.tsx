@@ -1,4 +1,4 @@
-import type { BookingStepsCardProps } from '@/features/auth-patient/types';
+import type { BookingStepsCardProps } from '@/features/patient-auth/types';
 import { cn } from '@/lib/utils';
 
 function BookingStepsCard({ title, steps, className }: BookingStepsCardProps) {

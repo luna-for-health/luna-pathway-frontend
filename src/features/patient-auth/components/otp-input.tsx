@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import type { OtpInputProps } from '@/features/auth-patient/types';
+import type { OtpInputProps } from '@/features/patient-auth/types';
 import { cn } from '@/lib/utils';
 
 const OtpInput = React.forwardRef<HTMLInputElement, OtpInputProps>(function OtpInput(

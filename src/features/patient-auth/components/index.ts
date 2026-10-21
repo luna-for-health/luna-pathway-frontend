@@ -11,4 +11,4 @@ export type {
   MediaCardProps,
   OtpInputProps,
   TestimonialCardProps,
-} from '@/features/auth-patient/types';
+} from '@/features/patient-auth/types';

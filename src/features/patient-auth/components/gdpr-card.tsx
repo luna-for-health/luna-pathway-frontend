@@ -1,4 +1,4 @@
-import type { GdprCardProps } from '@/features/auth-patient/types';
+import type { GdprCardProps } from '@/features/patient-auth/types';
 import { renderBoldText } from '@/lib/text-formatting';
 import { cn } from '@/lib/utils';
 

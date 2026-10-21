@@ -4,9 +4,9 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { WebHeader } from '@/components/layout';
 import { LoadingOverlay } from '@/components/ui';
-import { useSendCode, useVerifyCode } from '@/features/auth-patient/api';
-import { OtpInput } from '@/features/auth-patient/components';
-import { consumePostAuthRedirect } from '@/features/auth-patient/lib/post-auth-redirect';
+import { useSendCode, useVerifyCode } from '@/features/patient-auth/api';
+import { OtpInput } from '@/features/patient-auth/components';
+import { consumePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
 import { AnalyticsEvent, analytics, ApiError, tokenStorage } from '@/services';
 
 const RESEND_DELAY = 30;

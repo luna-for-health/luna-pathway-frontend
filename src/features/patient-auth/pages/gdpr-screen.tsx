@@ -13,9 +13,9 @@ import {
   CarouselPrevious,
   Checkbox,
 } from '@/components/ui';
-import { useAcceptGdpr, useGdprConsent, useSendCode } from '@/features/auth-patient/api';
-import { GdprCard, MediaCard } from '@/features/auth-patient/components';
-import { consumePostAuthRedirect } from '@/features/auth-patient/lib/post-auth-redirect';
+import { useAcceptGdpr, useGdprConsent, useSendCode } from '@/features/patient-auth/api';
+import { GdprCard, MediaCard } from '@/features/patient-auth/components';
+import { consumePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
 import { CheckIcon, OvalPlusIcon, OvalUserIcon, ProtectedUserIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics } from '@/services';

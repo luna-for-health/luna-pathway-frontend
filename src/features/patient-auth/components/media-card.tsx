@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 import { useCarousel } from '@/components/ui';
-import type { MediaCardProps } from '@/features/auth-patient/types';
+import type { MediaCardProps } from '@/features/patient-auth/types';
 import { cn } from '@/lib/utils';
 
 /**

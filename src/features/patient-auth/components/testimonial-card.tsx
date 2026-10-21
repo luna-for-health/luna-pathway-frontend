@@ -1,4 +1,4 @@
-import type { TestimonialCardProps } from '@/features/auth-patient/types';
+import type { TestimonialCardProps } from '@/features/patient-auth/types';
 import { CheckCircleIcon } from '@/icons';
 import { renderBoldText } from '@/lib/text-formatting';
 import { cn } from '@/lib/utils';

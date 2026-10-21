@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { WebHeader } from '@/components/layout';
 import { Button } from '@/components/ui';
-import { BookingStepsCard } from '@/features/auth-patient/components';
+import { BookingStepsCard } from '@/features/patient-auth/components';
 
 // TODO: make the center name dynamic once the backend exposes per-center info.
 const CENTER_NAME = 'Centre Luna Marseille';

@@ -7,8 +7,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui';
-import { useOnboarding } from '@/features/auth-patient/api';
-import { LoginForm, MediaCard, TestimonialCard } from '@/features/auth-patient/components';
+import { useOnboarding } from '@/features/patient-auth/api';
+import { LoginForm, MediaCard, TestimonialCard } from '@/features/patient-auth/components';
 import { HeartIcon, MoonIcon, OpenBookIcon } from '@/icons';
 
 function getStepIcon(step: number) {

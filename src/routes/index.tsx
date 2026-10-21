@@ -6,7 +6,6 @@ import {
   AccountStep3Screen,
   AccountStep4Screen,
 } from '@/features/account/pages';
-import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
 import {
   ForgotPasswordSecretaryScreen,
   LoginSecretaryScreen,
@@ -23,6 +22,7 @@ import {
   RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/diagnostic/pages';
+import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/patient-auth/pages';
 import { InboxScreen } from '@/features/secretary/pages';
 
 import AppLayout from './app-layout';

@@ -5,11 +5,11 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 import { Button, Input, SSOButton } from '@/components/ui';
-import { useCheckGdprConsent, useSendCode, useSignupWithOauth } from '@/features/auth-patient/api';
-import { consumePostAuthRedirect } from '@/features/auth-patient/lib/post-auth-redirect';
-import { loginSchema, type LoginFormValues } from '@/features/auth-patient/schemas';
-import { signInWithApple, signInWithGoogle } from '@/features/auth-patient/services';
-import type { LoginFormProps } from '@/features/auth-patient/types';
+import { useCheckGdprConsent, useSendCode, useSignupWithOauth } from '@/features/patient-auth/api';
+import { consumePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
+import { loginSchema, type LoginFormValues } from '@/features/patient-auth/schemas';
+import { signInWithApple, signInWithGoogle } from '@/features/patient-auth/services';
+import type { LoginFormProps } from '@/features/patient-auth/types';
 import { ArrowForwardIcon, MailIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics, ApiError, tokenStorage } from '@/services';
