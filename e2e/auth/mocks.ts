@@ -127,19 +127,6 @@ export async function mockSendCode(
   });
 }
 
-export async function mockLogin(
-  page: Page,
-  { shouldFail = false, user = makeUser({ has_accepted_gdpr: true }) } = {}
-) {
-  await page.route('**/auth/login', route =>
-    route.fulfill(
-      shouldFail
-        ? { status: 400, json: fail('Code invalide, veuillez réessayer.') }
-        : { json: ok({ user, access_token: 'fake-access-token' }) }
-    )
-  );
-}
-
 export async function mockVerifyCode(
   page: Page,
   { shouldFail = false, user = makeUser({ has_accepted_gdpr: true }) } = {}
@@ -179,6 +166,11 @@ export async function mockOauthSignup(
  * rejects instantly instead of opening a real Google popup.
  */
 export async function stubGoogleIdentity(page: Page, outcome: 'success' | 'cancelled' = 'success') {
+  // `signInWithGoogle` also fetches the real Google userinfo endpoint for the patient's name.
+  // Mock it so these tests never hit Google's servers (that call made them slow and flaky).
+  await page.route('**/oauth2/v3/userinfo', route =>
+    route.fulfill({ json: { given_name: 'Jane', family_name: 'Doe' } })
+  );
   await page.addInitScript(outcome => {
     interface StubTokenClientConfig {
       callback: (response: {
