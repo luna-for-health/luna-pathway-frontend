@@ -1,4 +1,4 @@
-import type { SkillPickerProps } from '@/features/diagnostic/types';
+import type { SkillPickerProps } from '@/features/patient-questionnaire/types';
 import { cn } from '@/lib/utils';
 
 /**

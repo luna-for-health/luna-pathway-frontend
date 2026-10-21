@@ -1,4 +1,4 @@
-import type { ConversationThreadProps } from '@/features/diagnostic/types';
+import type { ConversationThreadProps } from '@/features/patient-questionnaire/types';
 
 function ConversationThread({ messages }: ConversationThreadProps) {
   return (

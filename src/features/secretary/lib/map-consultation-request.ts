@@ -1,4 +1,4 @@
-import { SYMPTOMS } from '@/features/diagnostic/lib/symptoms';
+import { SYMPTOMS } from '@/features/patient-questionnaire/lib/symptoms';
 import type { ConsultationRequestResource } from '@/features/secretary/api';
 import { mapDocumentOcr } from '@/features/secretary/lib/document-ocr';
 import { formatInboxTimestamp } from '@/features/secretary/lib/format-inbox-timestamp';

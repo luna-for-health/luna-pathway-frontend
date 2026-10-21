@@ -1,4 +1,4 @@
-import type { ConsultationReasonOptionProps } from '@/features/diagnostic/types';
+import type { ConsultationReasonOptionProps } from '@/features/patient-questionnaire/types';
 import { CheckCircleIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 

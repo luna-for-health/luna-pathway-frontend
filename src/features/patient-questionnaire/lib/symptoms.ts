@@ -1,4 +1,4 @@
-import type { ConsultationRequestSymptomScores } from '@/features/diagnostic/api/types';
+import type { ConsultationRequestSymptomScores } from '@/features/patient-questionnaire/api/types';
 
 export interface Symptom {
   id: string;

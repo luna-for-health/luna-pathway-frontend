@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { getOrCreateQuestionnaireId } from '@/features/diagnostic/lib/analytics';
-import { consumeJustSubmitted } from '@/features/diagnostic/lib/submission-flag';
-import type { DiagnosticDraftState } from '@/features/diagnostic/types';
+import { getOrCreateQuestionnaireId } from '@/features/patient-questionnaire/lib/analytics';
+import { consumeJustSubmitted } from '@/features/patient-questionnaire/lib/submission-flag';
+import type { DiagnosticDraftState } from '@/features/patient-questionnaire/types';
 import { CircleScribbleIcon } from '@/icons';
 import { AnalyticsEvent, analytics } from '@/services';
 

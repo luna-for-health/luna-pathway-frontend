@@ -1,5 +1,5 @@
 import { WebHeader } from '@/components/layout';
-import { DiagnosticIntro } from '@/features/diagnostic/components';
+import { DiagnosticIntro } from '@/features/patient-questionnaire/components';
 
 export default function DiagnosticIntroScreen() {
   return (

@@ -4,16 +4,22 @@ import type * as React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Alert, Button, Dialog } from '@/components/ui';
-import { DocumentRow } from '@/features/diagnostic/components/document-row';
-import { usePreRdvScreenView } from '@/features/diagnostic/hooks';
-import { getOrCreateQuestionnaireId } from '@/features/diagnostic/lib/analytics';
+import { DocumentRow } from '@/features/patient-questionnaire/components/document-row';
+import { usePreRdvScreenView } from '@/features/patient-questionnaire/hooks';
+import { getOrCreateQuestionnaireId } from '@/features/patient-questionnaire/lib/analytics';
 import {
   getDiagnosticDraft,
   saveDiagnosticDraft,
-} from '@/features/diagnostic/lib/diagnostic-draft';
-import type { PatientDocument } from '@/features/diagnostic/lib/documents';
-import { getFileExtension, validateDocumentFile } from '@/features/diagnostic/lib/documents';
-import type { DiagnosticDraftState, PatientDocumentsProps } from '@/features/diagnostic/types';
+} from '@/features/patient-questionnaire/lib/diagnostic-draft';
+import type { PatientDocument } from '@/features/patient-questionnaire/lib/documents';
+import {
+  getFileExtension,
+  validateDocumentFile,
+} from '@/features/patient-questionnaire/lib/documents';
+import type {
+  DiagnosticDraftState,
+  PatientDocumentsProps,
+} from '@/features/patient-questionnaire/types';
 import { ArrowBackIcon, ArrowForwardIcon, FileIcon, MoonIcon } from '@/icons';
 import { now } from '@/lib/time';
 import { cn } from '@/lib/utils';

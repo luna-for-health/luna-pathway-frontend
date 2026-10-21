@@ -1,4 +1,4 @@
-import type { SummaryAnswerProps } from '@/features/diagnostic/types';
+import type { SummaryAnswerProps } from '@/features/patient-questionnaire/types';
 import { CheckCircleIcon } from '@/icons';
 
 /**

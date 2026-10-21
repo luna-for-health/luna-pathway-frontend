@@ -3,13 +3,13 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Textarea } from '@/components/ui';
-import { usePreRdvScreenView } from '@/features/diagnostic/hooks';
-import { getOrCreateQuestionnaireId } from '@/features/diagnostic/lib/analytics';
+import { usePreRdvScreenView } from '@/features/patient-questionnaire/hooks';
+import { getOrCreateQuestionnaireId } from '@/features/patient-questionnaire/lib/analytics';
 import {
   getDiagnosticDraft,
   saveDiagnosticDraft,
-} from '@/features/diagnostic/lib/diagnostic-draft';
-import type { DiagnosticDraftState } from '@/features/diagnostic/types';
+} from '@/features/patient-questionnaire/lib/diagnostic-draft';
+import type { DiagnosticDraftState } from '@/features/patient-questionnaire/types';
 import useSpeechToText from '@/hooks/useSpeechToText';
 import { ArrowBackIcon, ArrowForwardIcon, MicIcon, MoonIcon, StopCircleIcon } from '@/icons';
 import { now } from '@/lib/time';

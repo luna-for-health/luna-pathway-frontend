@@ -1,5 +1,5 @@
-import type { PatientDocument } from '@/features/diagnostic/lib/documents';
-import type { DiagnosticDraftState } from '@/features/diagnostic/types';
+import type { PatientDocument } from '@/features/patient-questionnaire/lib/documents';
+import type { DiagnosticDraftState } from '@/features/patient-questionnaire/types';
 
 /**
  * Answers the patient has given so far in the `/diagnostic/step-*` questionnaire, kept

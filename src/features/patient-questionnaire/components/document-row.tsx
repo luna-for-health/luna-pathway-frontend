@@ -1,5 +1,5 @@
 import { Button, Loader } from '@/components/ui';
-import type { PatientDocumentRowProps } from '@/features/diagnostic/types';
+import type { PatientDocumentRowProps } from '@/features/patient-questionnaire/types';
 import { ExternalLinkIcon, TrashIcon } from '@/icons';
 
 /**
