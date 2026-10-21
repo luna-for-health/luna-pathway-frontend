@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { SearchBar } from '@/components/ui';
-import { InboxListItem } from '@/features/secretary/components/inbox-list-item';
+import { InboxListItem } from '@/features/secretary-inbox/components/inbox-list-item';
 import {
   SEARCH_TRACKING_DEBOUNCE_MS,
   SEARCH_TRACKING_MIN_LENGTH,
-} from '@/features/secretary/lib/analytics';
-import { normalizeSearchText } from '@/features/secretary/lib/normalize-search-text';
-import type { InboxListProps } from '@/features/secretary/types';
+} from '@/features/secretary-inbox/lib/analytics';
+import { normalizeSearchText } from '@/features/secretary-inbox/lib/normalize-search-text';
+import type { InboxListProps } from '@/features/secretary-inbox/types';
 import { AnalyticsEvent, analytics } from '@/services';
 
 export function InboxList({

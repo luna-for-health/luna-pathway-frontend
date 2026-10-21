@@ -1,5 +1,5 @@
 import { EvaScoreBar } from '@/components/ui';
-import type { InboxSymptomsProps } from '@/features/secretary/types';
+import type { InboxSymptomsProps } from '@/features/secretary-inbox/types';
 
 /**
  * "Symptômes" info-card of the request detail (Figma node 7751:9313) — one "symptom-line" per

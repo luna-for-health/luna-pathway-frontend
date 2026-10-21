@@ -1,5 +1,5 @@
-import { isInboxRequestTreated } from '@/features/secretary/lib/inbox-status';
-import type { InboxRequest } from '@/features/secretary/types';
+import { isInboxRequestTreated } from '@/features/secretary-inbox/lib/inbox-status';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 import { CalendarCheckIcon, ClockFastForwardIcon, ProcessedIcon } from '@/icons';
 
 interface InboxStatusIconProps {

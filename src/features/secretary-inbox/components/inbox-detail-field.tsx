@@ -1,4 +1,4 @@
-import type { InboxDetailFieldProps } from '@/features/secretary/types';
+import type { InboxDetailFieldProps } from '@/features/secretary-inbox/types';
 
 export function InboxDetailField({ label, value }: InboxDetailFieldProps) {
   return (

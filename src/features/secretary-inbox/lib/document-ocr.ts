@@ -1,5 +1,5 @@
-import type { ConsultationRequestDocumentOcr } from '@/features/secretary/api';
-import type { InboxDocumentOcr } from '@/features/secretary/types';
+import type { ConsultationRequestDocumentOcr } from '@/features/secretary-inbox/api';
+import type { InboxDocumentOcr } from '@/features/secretary-inbox/types';
 
 /** Known OCR category/subcategory slugs → display labels. Unknown slugs fall back to `humanizeSlug`. */
 const OCR_LABELS: Record<string, string> = {

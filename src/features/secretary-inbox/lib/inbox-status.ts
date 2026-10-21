@@ -1,4 +1,4 @@
-import type { InboxRequest } from '@/features/secretary/types';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 
 /** Closed through "Traitée" — by the API's `treated` status or a local reason pick. */
 export function isInboxRequestTreated(request: InboxRequest): boolean {

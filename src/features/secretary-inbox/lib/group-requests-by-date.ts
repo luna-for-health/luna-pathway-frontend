@@ -1,4 +1,4 @@
-import type { InboxRequest } from '@/features/secretary/types';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 
 export interface InboxDateGroup {
   date: string;

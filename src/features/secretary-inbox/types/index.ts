@@ -1,4 +1,4 @@
-import type { InboxProcessReason } from '@/features/secretary/lib/process-reasons';
+import type { InboxProcessReason } from '@/features/secretary-inbox/lib/process-reasons';
 
 export type InboxRequestStatus = 'new' | 'reminder' | 'processed';
 

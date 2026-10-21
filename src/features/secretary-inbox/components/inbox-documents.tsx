@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui';
-import { getConsultationRequestDocument } from '@/features/secretary/api';
+import { getConsultationRequestDocument } from '@/features/secretary-inbox/api';
 import type {
   InboxDocument,
   InboxDocumentOcr,
   InboxDocumentsProps,
-} from '@/features/secretary/types';
+} from '@/features/secretary-inbox/types';
 import { ExternalLinkIcon } from '@/icons';
 
 /** Long enough for the new tab to load the file before its blob URL is released. */

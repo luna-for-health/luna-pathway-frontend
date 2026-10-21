@@ -1,9 +1,9 @@
 import { useQueries, useQueryClient } from '@tanstack/react-query';
 
-import { getConsultationRequests } from '@/features/secretary/api';
-import type { ConsultationRequestStatus } from '@/features/secretary/api';
-import { mapConsultationRequest } from '@/features/secretary/lib/map-consultation-request';
-import type { InboxRequest, InboxRequestStatus } from '@/features/secretary/types';
+import { getConsultationRequests } from '@/features/secretary-inbox/api';
+import type { ConsultationRequestStatus } from '@/features/secretary-inbox/api';
+import { mapConsultationRequest } from '@/features/secretary-inbox/lib/map-consultation-request';
+import type { InboxRequest, InboxRequestStatus } from '@/features/secretary-inbox/types';
 
 import type { UseQueryResult } from '@tanstack/react-query';
 

@@ -1,11 +1,11 @@
 import { Badge } from '@/components/ui';
-import { InboxStatusIcon } from '@/features/secretary/components/inbox-status-icon';
-import { getInboxStatusIconClassName } from '@/features/secretary/lib/inbox-status';
+import { InboxStatusIcon } from '@/features/secretary-inbox/components/inbox-status-icon';
+import { getInboxStatusIconClassName } from '@/features/secretary-inbox/lib/inbox-status';
 import {
   getInboxProcessReasonBadgeColor,
   getInboxProcessReasonBadgeLabel,
-} from '@/features/secretary/lib/process-reasons';
-import type { InboxRequest } from '@/features/secretary/types';
+} from '@/features/secretary-inbox/lib/process-reasons';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 import { cn } from '@/lib/utils';
 
 interface InboxProcessedListItemProps {

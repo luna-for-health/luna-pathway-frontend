@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { Link } from '@/components/ui';
-import { MISSING_VALUE } from '@/features/secretary/lib/map-consultation-request';
-import type { InboxPatientInfoCardProps } from '@/features/secretary/types';
+import { MISSING_VALUE } from '@/features/secretary-inbox/lib/map-consultation-request';
+import type { InboxPatientInfoCardProps } from '@/features/secretary-inbox/types';
 import { CalendarIcon, CopyIcon, MailIcon, MapPinIcon, PhoneIcon } from '@/icons';
 
 export function InboxPatientInfoCard({ info, onCopy }: InboxPatientInfoCardProps) {

@@ -23,7 +23,7 @@ import {
   RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/patient-questionnaire/pages';
-import { InboxScreen } from '@/features/secretary/pages';
+import { InboxScreen } from '@/features/secretary-inbox/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';

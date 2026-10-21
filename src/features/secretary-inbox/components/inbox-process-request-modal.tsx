@@ -3,8 +3,8 @@ import * as React from 'react';
 import { Dialog as RadixDialog } from 'radix-ui';
 
 import { Button, Select } from '@/components/ui';
-import { INBOX_PROCESS_REASONS } from '@/features/secretary/lib/process-reasons';
-import type { InboxProcessRequestModalProps } from '@/features/secretary/types';
+import { INBOX_PROCESS_REASONS } from '@/features/secretary-inbox/lib/process-reasons';
+import type { InboxProcessRequestModalProps } from '@/features/secretary-inbox/types';
 import { CrossIcon } from '@/icons';
 
 /**

@@ -1,13 +1,13 @@
 import { SYMPTOMS } from '@/features/patient-questionnaire/lib/symptoms';
-import type { ConsultationRequestResource } from '@/features/secretary/api';
-import { mapDocumentOcr } from '@/features/secretary/lib/document-ocr';
-import { formatInboxTimestamp } from '@/features/secretary/lib/format-inbox-timestamp';
-import { toInboxProcessReason } from '@/features/secretary/lib/process-reasons';
+import type { ConsultationRequestResource } from '@/features/secretary-inbox/api';
+import { mapDocumentOcr } from '@/features/secretary-inbox/lib/document-ocr';
+import { formatInboxTimestamp } from '@/features/secretary-inbox/lib/format-inbox-timestamp';
+import { toInboxProcessReason } from '@/features/secretary-inbox/lib/process-reasons';
 import type {
   InboxRequest,
   InboxRequestStatus,
   InboxSymptomScore,
-} from '@/features/secretary/types';
+} from '@/features/secretary-inbox/types';
 
 /** Shown where `ConsultationRequestResource` has no matching field yet. */
 export const MISSING_VALUE = '—';

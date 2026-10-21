@@ -1,23 +1,23 @@
 import * as React from 'react';
 
 import { Badge, Button } from '@/components/ui';
-import { InboxDetailField } from '@/features/secretary/components/inbox-detail-field';
-import { InboxDocuments } from '@/features/secretary/components/inbox-documents';
-import { InboxPatientInfoCard } from '@/features/secretary/components/inbox-patient-info-card';
-import { InboxProcessRequestModal } from '@/features/secretary/components/inbox-process-request-modal';
-import { InboxStatusIcon } from '@/features/secretary/components/inbox-status-icon';
-import { InboxSymptoms } from '@/features/secretary/components/inbox-symptoms';
-import { getRequestTrackingProperties } from '@/features/secretary/lib/analytics';
+import { InboxDetailField } from '@/features/secretary-inbox/components/inbox-detail-field';
+import { InboxDocuments } from '@/features/secretary-inbox/components/inbox-documents';
+import { InboxPatientInfoCard } from '@/features/secretary-inbox/components/inbox-patient-info-card';
+import { InboxProcessRequestModal } from '@/features/secretary-inbox/components/inbox-process-request-modal';
+import { InboxStatusIcon } from '@/features/secretary-inbox/components/inbox-status-icon';
+import { InboxSymptoms } from '@/features/secretary-inbox/components/inbox-symptoms';
+import { getRequestTrackingProperties } from '@/features/secretary-inbox/lib/analytics';
 import {
   getInboxStatusIconClassName,
   getInboxStatusLabel,
-} from '@/features/secretary/lib/inbox-status';
+} from '@/features/secretary-inbox/lib/inbox-status';
 import {
   getInboxProcessReasonBadgeColor,
   getInboxProcessReasonBadgeLabel,
-} from '@/features/secretary/lib/process-reasons';
-import type { InboxProcessReason } from '@/features/secretary/lib/process-reasons';
-import type { InboxDetailsProps, InboxDocument } from '@/features/secretary/types';
+} from '@/features/secretary-inbox/lib/process-reasons';
+import type { InboxProcessReason } from '@/features/secretary-inbox/lib/process-reasons';
+import type { InboxDetailsProps, InboxDocument } from '@/features/secretary-inbox/types';
 import { CalendarCheckIcon, ClockFastForwardIcon, CrossIcon, ProcessedIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics } from '@/services';

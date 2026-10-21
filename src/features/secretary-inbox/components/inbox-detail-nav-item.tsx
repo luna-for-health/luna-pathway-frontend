@@ -1,6 +1,6 @@
-import { InboxStatusIcon } from '@/features/secretary/components/inbox-status-icon';
-import { getInboxStatusTimestamp } from '@/features/secretary/lib/inbox-status';
-import type { InboxRequest } from '@/features/secretary/types';
+import { InboxStatusIcon } from '@/features/secretary-inbox/components/inbox-status-icon';
+import { getInboxStatusTimestamp } from '@/features/secretary-inbox/lib/inbox-status';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 import { cn } from '@/lib/utils';
 
 interface InboxDetailNavItemProps {

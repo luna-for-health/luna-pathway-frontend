@@ -1,23 +1,26 @@
 import * as React from 'react';
 
 import { Loader, SegmentedButton, SegmentedItem, Toast } from '@/components/ui';
-import type { ConsultationRequestStatus } from '@/features/secretary/api';
-import { InboxDetailNav } from '@/features/secretary/components/inbox-detail-nav';
-import { InboxDetails } from '@/features/secretary/components/inbox-details';
-import { InboxEmpty } from '@/features/secretary/components/inbox-empty';
-import { InboxList } from '@/features/secretary/components/inbox-list';
-import { InboxProcessedList } from '@/features/secretary/components/inbox-processed-list';
-import { InboxReminderList } from '@/features/secretary/components/inbox-reminder-list';
-import { useInboxRequests, useUpdateRequestStatus } from '@/features/secretary/hooks';
-import { getRequestTrackingProperties, toInboxTabName } from '@/features/secretary/lib/analytics';
-import { formatInboxTimestamp } from '@/features/secretary/lib/format-inbox-timestamp';
-import { isInboxRequestTreated } from '@/features/secretary/lib/inbox-status';
-import type { InboxProcessReason } from '@/features/secretary/lib/process-reasons';
+import type { ConsultationRequestStatus } from '@/features/secretary-inbox/api';
+import { InboxDetailNav } from '@/features/secretary-inbox/components/inbox-detail-nav';
+import { InboxDetails } from '@/features/secretary-inbox/components/inbox-details';
+import { InboxEmpty } from '@/features/secretary-inbox/components/inbox-empty';
+import { InboxList } from '@/features/secretary-inbox/components/inbox-list';
+import { InboxProcessedList } from '@/features/secretary-inbox/components/inbox-processed-list';
+import { InboxReminderList } from '@/features/secretary-inbox/components/inbox-reminder-list';
+import { useInboxRequests, useUpdateRequestStatus } from '@/features/secretary-inbox/hooks';
+import {
+  getRequestTrackingProperties,
+  toInboxTabName,
+} from '@/features/secretary-inbox/lib/analytics';
+import { formatInboxTimestamp } from '@/features/secretary-inbox/lib/format-inbox-timestamp';
+import { isInboxRequestTreated } from '@/features/secretary-inbox/lib/inbox-status';
+import type { InboxProcessReason } from '@/features/secretary-inbox/lib/process-reasons';
 import type {
   InboxRequest,
   InboxRequestOutcome,
   InboxRequestStatus,
-} from '@/features/secretary/types';
+} from '@/features/secretary-inbox/types';
 import { CheckCircleIcon } from '@/icons';
 import { AnalyticsEvent, analytics } from '@/services';
 

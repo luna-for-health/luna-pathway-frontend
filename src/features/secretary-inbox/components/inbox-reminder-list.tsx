@@ -1,5 +1,5 @@
-import { InboxReminderListItem } from '@/features/secretary/components/inbox-reminder-list-item';
-import type { InboxRequest } from '@/features/secretary/types';
+import { InboxReminderListItem } from '@/features/secretary-inbox/components/inbox-reminder-list-item';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 
 interface InboxReminderListProps {
   requests: InboxRequest[];

@@ -1,4 +1,4 @@
-import type { InboxListItemProps } from '@/features/secretary/types';
+import type { InboxListItemProps } from '@/features/secretary-inbox/types';
 import { cn } from '@/lib/utils';
 
 export function InboxListItem({

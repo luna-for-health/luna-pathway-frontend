@@ -1,4 +1,4 @@
-import type { InboxRequest, InboxRequestStatus } from '@/features/secretary/types';
+import type { InboxRequest, InboxRequestStatus } from '@/features/secretary-inbox/types';
 import type { InboxRequestTrackingProperties, InboxTabName } from '@/services';
 
 /** Minimum typed characters before a search counts as "launched" (tracking plan). */

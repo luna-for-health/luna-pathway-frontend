@@ -1,6 +1,6 @@
-import { InboxDetailNavItem } from '@/features/secretary/components/inbox-detail-nav-item';
-import { groupRequestsByDate } from '@/features/secretary/lib/group-requests-by-date';
-import type { InboxRequest } from '@/features/secretary/types';
+import { InboxDetailNavItem } from '@/features/secretary-inbox/components/inbox-detail-nav-item';
+import { groupRequestsByDate } from '@/features/secretary-inbox/lib/group-requests-by-date';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 
 interface InboxDetailNavProps {
   requests: InboxRequest[];

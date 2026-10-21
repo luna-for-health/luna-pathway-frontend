@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
-import { updateConsultationRequestStatus } from '@/features/secretary/api';
-import type { UpdateConsultationRequestStatusPayload } from '@/features/secretary/api';
+import { updateConsultationRequestStatus } from '@/features/secretary-inbox/api';
+import type { UpdateConsultationRequestStatusPayload } from '@/features/secretary-inbox/api';
 
 export function useUpdateRequestStatus() {
   const queryClient = useQueryClient();

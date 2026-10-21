@@ -1,4 +1,4 @@
-import type { InboxRequest } from '@/features/secretary/types';
+import type { InboxRequest } from '@/features/secretary-inbox/types';
 import { ClockFastForwardIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 

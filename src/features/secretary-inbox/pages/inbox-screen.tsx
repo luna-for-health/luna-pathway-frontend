@@ -1,4 +1,4 @@
-import { InboxView } from '@/features/secretary/components';
+import { InboxView } from '@/features/secretary-inbox/components';
 
 export default function InboxScreen() {
   return <InboxView />;
