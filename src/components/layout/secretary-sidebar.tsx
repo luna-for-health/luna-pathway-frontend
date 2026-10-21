@@ -5,7 +5,7 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 import { LogoMark } from '@/components/layout/logo-mark';
 import { Dropdown, Menu, MenuItem } from '@/components/ui';
-import { useSecretaryLogout } from '@/features/auth-secretary/api';
+import { useSecretaryLogout } from '@/features/secretary-auth/api';
 import { FolderIcon, InboxIcon, UserCircleIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { analytics, tokenStorage } from '@/services';

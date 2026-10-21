@@ -2,7 +2,7 @@ import { useSyncExternalStore } from 'react';
 
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
-import { savePostAuthRedirect } from '@/features/auth-patient/lib/post-auth-redirect';
+import { savePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
 import { tokenStorage } from '@/services';
 
 /**

@@ -5,14 +5,9 @@ import {
   AccountStep2Screen,
   AccountStep3Screen,
   AccountStep4Screen,
-} from '@/features/account/pages';
-import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/auth-patient/pages';
-import {
-  ForgotPasswordSecretaryScreen,
-  LoginSecretaryScreen,
-  ResetPasswordSecretaryScreen,
-} from '@/features/auth-secretary/pages';
-import { DiagnosticIntro } from '@/features/diagnostic/components';
+} from '@/features/patient-account-creation/pages';
+import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/patient-auth/pages';
+import { DiagnosticIntro } from '@/features/patient-questionnaire/components';
 import {
   ConfirmationScreen,
   ConsultationReasonScreen,
@@ -22,8 +17,13 @@ import {
   PatientStoryScreen,
   RequestSummaryScreen,
   SymptomIntensityScreen,
-} from '@/features/diagnostic/pages';
-import { InboxScreen } from '@/features/secretary/pages';
+} from '@/features/patient-questionnaire/pages';
+import {
+  ForgotPasswordSecretaryScreen,
+  LoginSecretaryScreen,
+  ResetPasswordSecretaryScreen,
+} from '@/features/secretary-auth/pages';
+import { InboxScreen } from '@/features/secretary-inbox/pages';
 
 import AppLayout from './app-layout';
 import HomePlaceholder from './home-placeholder';
