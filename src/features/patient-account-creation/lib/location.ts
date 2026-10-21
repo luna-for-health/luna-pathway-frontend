@@ -1,4 +1,4 @@
-import type { CityOption, GeoCommune } from '@/features/account/types';
+import type { CityOption, GeoCommune } from '@/features/patient-account-creation/types';
 
 export const MIN_CITY_QUERY_LENGTH = 2;
 export const MAX_CITY_OPTIONS = 5;

@@ -5,12 +5,18 @@ import { useForm, useWatch } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Input } from '@/components/ui';
-import { getRandomAvatar } from '@/features/account/lib/avatar';
-import { toIsoDate } from '@/features/account/lib/date';
-import { toRegisterLocation } from '@/features/account/lib/location';
-import { formatPhoneInput, toE164FrenchPhone } from '@/features/account/lib/phone';
-import { accountPhoneSchema, type AccountPhoneFormValues } from '@/features/account/schemas';
-import type { AccountDraftState, AccountPhoneFormProps } from '@/features/account/types';
+import { getRandomAvatar } from '@/features/patient-account-creation/lib/avatar';
+import { toIsoDate } from '@/features/patient-account-creation/lib/date';
+import { toRegisterLocation } from '@/features/patient-account-creation/lib/location';
+import { formatPhoneInput, toE164FrenchPhone } from '@/features/patient-account-creation/lib/phone';
+import {
+  accountPhoneSchema,
+  type AccountPhoneFormValues,
+} from '@/features/patient-account-creation/schemas';
+import type {
+  AccountDraftState,
+  AccountPhoneFormProps,
+} from '@/features/patient-account-creation/types';
 import { useRegister } from '@/features/patient-auth/api';
 import { consumePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
 import { ArrowForwardIcon, MoonIcon } from '@/icons';

@@ -3,12 +3,12 @@ import { useState, type FormEvent } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Input } from '@/components/ui';
-import { formatCityLabel } from '@/features/account/lib/location';
+import { formatCityLabel } from '@/features/patient-account-creation/lib/location';
 import type {
   AccountDraftState,
   AccountLocationFormProps,
   CityOption,
-} from '@/features/account/types';
+} from '@/features/patient-account-creation/types';
 import { ArrowForwardIcon, MoonIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics } from '@/services';

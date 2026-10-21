@@ -1,12 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import {
-  AccountStep1Screen,
-  AccountStep2Screen,
-  AccountStep3Screen,
-  AccountStep4Screen,
-} from '@/features/account/pages';
-import {
   ForgotPasswordSecretaryScreen,
   LoginSecretaryScreen,
   ResetPasswordSecretaryScreen,
@@ -22,6 +16,12 @@ import {
   RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/diagnostic/pages';
+import {
+  AccountStep1Screen,
+  AccountStep2Screen,
+  AccountStep3Screen,
+  AccountStep4Screen,
+} from '@/features/patient-account-creation/pages';
 import { GdprScreen, LoginScreen, OtpScreen, WelcomeScreen } from '@/features/patient-auth/pages';
 import { InboxScreen } from '@/features/secretary/pages';
 

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
-import { isFutureDate, parseDateOfBirth } from '@/features/account/lib/date';
-import { isValidFrenchPhone } from '@/features/account/lib/phone';
+import { isFutureDate, parseDateOfBirth } from '@/features/patient-account-creation/lib/date';
+import { isValidFrenchPhone } from '@/features/patient-account-creation/lib/phone';
 
 export const accountNameSchema = z.object({
   firstName: z.string().min(1, 'Le prénom est requis'),

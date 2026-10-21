@@ -3,8 +3,14 @@ import { useForm } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Input } from '@/components/ui';
-import { accountNameSchema, type AccountNameFormValues } from '@/features/account/schemas';
-import type { AccountDraftState, AccountNameFormProps } from '@/features/account/types';
+import {
+  accountNameSchema,
+  type AccountNameFormValues,
+} from '@/features/patient-account-creation/schemas';
+import type {
+  AccountDraftState,
+  AccountNameFormProps,
+} from '@/features/patient-account-creation/types';
 import { ArrowForwardIcon, MoonIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics } from '@/services';

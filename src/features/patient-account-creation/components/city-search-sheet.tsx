@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
 import { Input, Sheet } from '@/components/ui';
-import { findCityByCoordinates, useCitySearch } from '@/features/account/api';
+import { findCityByCoordinates, useCitySearch } from '@/features/patient-account-creation/api';
 import {
   formatCityLabel,
   isSameCity,
   MIN_CITY_QUERY_LENGTH,
-} from '@/features/account/lib/location';
+} from '@/features/patient-account-creation/lib/location';
 import type {
   CityOption,
   CityOptionRowProps,
   CitySearchSheetProps,
-} from '@/features/account/types';
+} from '@/features/patient-account-creation/types';
 import useDebouncedValue from '@/hooks/useDebouncedValue';
 import { MapPinIcon, NavigationArrowIcon } from '@/icons';
 import { cn } from '@/lib/utils';

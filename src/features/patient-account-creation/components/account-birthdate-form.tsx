@@ -3,12 +3,15 @@ import { useForm, useWatch } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Input } from '@/components/ui';
-import { formatDateInput } from '@/features/account/lib/date';
+import { formatDateInput } from '@/features/patient-account-creation/lib/date';
 import {
   accountBirthdateSchema,
   type AccountBirthdateFormValues,
-} from '@/features/account/schemas';
-import type { AccountBirthdateFormProps, AccountDraftState } from '@/features/account/types';
+} from '@/features/patient-account-creation/schemas';
+import type {
+  AccountBirthdateFormProps,
+  AccountDraftState,
+} from '@/features/patient-account-creation/types';
 import { ArrowForwardIcon, MoonIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics } from '@/services';

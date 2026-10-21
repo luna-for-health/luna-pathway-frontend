@@ -6,8 +6,8 @@ import {
   MAX_CITY_OPTIONS,
   MIN_CITY_QUERY_LENGTH,
   toCityOptions,
-} from '@/features/account/lib/location';
-import type { CityOption, GeoCommune } from '@/features/account/types';
+} from '@/features/patient-account-creation/lib/location';
+import type { CityOption, GeoCommune } from '@/features/patient-account-creation/types';
 
 const GEO_API_URL = 'https://geo.api.gouv.fr';
 const COMMUNE_FIELDS = 'nom,code,codesPostaux,population';
