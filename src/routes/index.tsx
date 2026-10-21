@@ -1,11 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import {
-  ForgotPasswordSecretaryScreen,
-  LoginSecretaryScreen,
-  ResetPasswordSecretaryScreen,
-} from '@/features/auth-secretary/pages';
-import {
   AccountStep1Screen,
   AccountStep2Screen,
   AccountStep3Screen,
@@ -23,6 +18,11 @@ import {
   RequestSummaryScreen,
   SymptomIntensityScreen,
 } from '@/features/patient-questionnaire/pages';
+import {
+  ForgotPasswordSecretaryScreen,
+  LoginSecretaryScreen,
+  ResetPasswordSecretaryScreen,
+} from '@/features/secretary-auth/pages';
 import { InboxScreen } from '@/features/secretary-inbox/pages';
 
 import AppLayout from './app-layout';

@@ -6,4 +6,4 @@ export type {
   ForgotPasswordSecretaryFormProps,
   LoginSecretaryFormProps,
   ResetPasswordSecretaryFormProps,
-} from '@/features/auth-secretary/types';
+} from '@/features/secretary-auth/types';

@@ -3,12 +3,12 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 import { Alert, Button, Input } from '@/components/ui';
-import { useSecretaryResetPassword } from '@/features/auth-secretary/api';
+import { useSecretaryResetPassword } from '@/features/secretary-auth/api';
 import {
   resetPasswordSecretarySchema,
   type ResetPasswordSecretaryFormValues,
-} from '@/features/auth-secretary/schemas';
-import type { ResetPasswordSecretaryFormProps } from '@/features/auth-secretary/types';
+} from '@/features/secretary-auth/schemas';
+import type { ResetPasswordSecretaryFormProps } from '@/features/secretary-auth/types';
 import { ArrowForwardIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { ApiError } from '@/services';

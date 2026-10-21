@@ -3,12 +3,12 @@ import { useForm } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { Button, Input } from '@/components/ui';
-import { useSecretaryLogin } from '@/features/auth-secretary/api';
+import { useSecretaryLogin } from '@/features/secretary-auth/api';
 import {
   loginSecretarySchema,
   type LoginSecretaryFormValues,
-} from '@/features/auth-secretary/schemas';
-import type { LoginSecretaryFormProps } from '@/features/auth-secretary/types';
+} from '@/features/secretary-auth/schemas';
+import type { LoginSecretaryFormProps } from '@/features/secretary-auth/types';
 import { ArrowForwardIcon, MailIcon } from '@/icons';
 import { cn } from '@/lib/utils';
 import { ApiError, analytics, tokenStorage } from '@/services';

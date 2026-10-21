@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { WebHeader } from '@/components/layout';
 import { Alert } from '@/components/ui';
 
-import { ResetPasswordSecretaryForm } from '@/features/auth-secretary/components';
+import { ResetPasswordSecretaryForm } from '@/features/secretary-auth/components';
 
 export default function ResetPasswordSecretaryScreen() {
   const navigate = useNavigate();
