@@ -162,7 +162,7 @@ export async function mockOauthSignup(
 
 /**
  * Stubs Google Identity Services (`window.google.accounts.oauth2`) before any app script
- * runs, so `signInWithGoogle()` (`src/features/auth/services/google-auth.ts`) resolves or
+ * runs, so `signInWithGoogle()` (`src/features/patient-auth/services/google-auth.ts`) resolves or
  * rejects instantly instead of opening a real Google popup.
  */
 export async function stubGoogleIdentity(page: Page, outcome: 'success' | 'cancelled' = 'success') {
