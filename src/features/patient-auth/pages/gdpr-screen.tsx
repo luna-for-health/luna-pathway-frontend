@@ -86,10 +86,8 @@ export default function GdprScreen() {
     if (!canSubmit || !email) return;
     if (alreadyAuthenticated) {
       try {
-        const response = await acceptGdpr();
-        console.log('[acceptGdpr] response:', response);
-      } catch (error) {
-        console.error('[acceptGdpr] error:', error);
+        await acceptGdpr();
+      } catch {
         return;
       }
       const needsAccountSetup = !data?.data.user?.has_completed_onboarding;

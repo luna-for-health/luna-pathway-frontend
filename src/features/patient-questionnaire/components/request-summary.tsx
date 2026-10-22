@@ -86,8 +86,6 @@ function RequestSummary() {
       markJustSubmitted();
       navigate('/diagnostic/confirmation', { state: { questionnaireId } });
     } catch (err) {
-      console.log(err);
-
       setSubmitError(
         err instanceof ApiError
           ? (err.response?.message ?? 'Une erreur est survenue, veuillez réessayer.')
