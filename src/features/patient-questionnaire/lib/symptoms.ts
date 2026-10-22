@@ -17,7 +17,7 @@ export const SYMPTOMS: Symptom[] = [
   {
     id: 'pelvic_pain',
     title: 'Douleurs dans le bas ventre',
-    description: 'Douleurs peleviennes',
+    description: 'Douleurs pelviennes',
   },
   {
     id: 'dyspareunia',

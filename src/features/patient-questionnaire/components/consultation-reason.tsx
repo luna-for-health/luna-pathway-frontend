@@ -89,7 +89,7 @@ function ConsultationReason() {
                 Pour commencer : quel est votre motif de consultation ?
               </p>
               <p className="text-body-secondary text-sm leading-5">
-                Vous pouvez choisir plusieurs motif, cela nous permet de vous orienter vers le bon
+                Vous pouvez choisir plusieurs motifs, cela nous permet de vous orienter vers le bon
                 professionnel.
               </p>
             </div>
