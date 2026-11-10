@@ -1,4 +1,4 @@
-# doctors-frontend
+# luna-pathway-frontend
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
@@ -45,8 +45,8 @@ environment-specific value comes from a local `.env` file that is never committe
 **Requirements:** Node.js 22 (see [`.nvmrc`](./.nvmrc)) and npm.
 
 ```bash
-git clone git@github.com:luna-for-health/doctors-frontend.git
-cd doctors-frontend
+git clone git@github.com:luna-for-health/luna-pathway-frontend.git
+cd luna-pathway-frontend
 npm install
 cp .env.example .env.development   # then fill in your own values
 npm run dev                        # http://localhost:5173

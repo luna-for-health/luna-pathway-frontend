@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in improving doctors-frontend! This guide explains how to set up the
+Thanks for your interest in improving luna-pathway-frontend! This guide explains how to set up the
 project, how we work with branches and commits, and what to check before opening a pull request.
 
 ## Getting set up

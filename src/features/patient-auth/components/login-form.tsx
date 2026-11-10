@@ -47,6 +47,7 @@ function LoginForm({ className }: LoginFormProps) {
   async function submit({ email }: LoginFormValues) {
     try {
       const consent = await checkGdprConsent(email);
+
       const type: 'login' | 'signup' = consent.data.user ? 'login' : 'signup';
 
       if (!consent.data.user?.has_accepted_gdpr) {
