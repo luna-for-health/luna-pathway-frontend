@@ -1,6 +1,6 @@
 # Security policy
 
-doctors-frontend is used by patients to share health information, so we take security reports
+luna-pathway-frontend is used by patients to share health information, so we take security reports
 seriously. Thank you for helping keep the project and its users safe.
 
 ## Reporting a vulnerability

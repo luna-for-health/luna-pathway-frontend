@@ -4,8 +4,8 @@ import { WebHeader } from '@/components/layout';
 import { Button } from '@/components/ui';
 import { BookingStepsCard } from '@/features/patient-auth/components';
 
-// TODO: make the center name dynamic once the backend exposes per-center info.
-const CENTER_NAME = 'Centre Luna Marseille';
+// Set per deployment so each centre can reuse this front-end (see .env.example).
+const CENTER_NAME = import.meta.env.VITE_CENTER_NAME || 'Centre Luna';
 
 const BOOKING_STEPS = [
   'Indiquer votre adresse e-mail pour créer votre compte ou vous connecter',

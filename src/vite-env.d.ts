@@ -11,6 +11,7 @@ interface ImportMetaEnv {
   readonly VITE_APPLE_CLIENT_ID: string;
   readonly VITE_APPLE_REDIRECT_URI: string;
   readonly VITE_AMPLITUDE_API_KEY: string;
+  readonly VITE_CENTER_NAME: string;
 }
 
 interface ImportMeta {
