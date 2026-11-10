@@ -10,6 +10,7 @@ import {
 } from '@/features/secretary-auth/schemas';
 import type { ResetPasswordSecretaryFormProps } from '@/features/secretary-auth/types';
 import { ArrowForwardIcon } from '@/icons';
+import { isTooManyAttempts, TOO_MANY_ATTEMPTS_MESSAGE } from '@/lib/auth-error-message';
 import { cn } from '@/lib/utils';
 import { ApiError } from '@/services';
 
@@ -37,6 +38,10 @@ function ResetPasswordSecretaryForm({ className, email }: ResetPasswordSecretary
         password_confirmation: values.passwordConfirmation,
       });
     } catch (error) {
+      if (isTooManyAttempts(error)) {
+        setError('passwordConfirmation', { message: TOO_MANY_ATTEMPTS_MESSAGE });
+        return;
+      }
       if (error instanceof ApiError) {
         const fieldErrors = error.response?.errors;
         if (fieldErrors?.code?.[0]) {

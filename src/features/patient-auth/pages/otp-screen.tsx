@@ -7,7 +7,8 @@ import { LoadingOverlay } from '@/components/ui';
 import { useSendCode, useVerifyCode } from '@/features/patient-auth/api';
 import { OtpInput } from '@/features/patient-auth/components';
 import { consumePostAuthRedirect } from '@/features/patient-auth/lib/post-auth-redirect';
-import { AnalyticsEvent, analytics, ApiError, tokenStorage } from '@/services';
+import { getAuthErrorMessage } from '@/lib/auth-error-message';
+import { AnalyticsEvent, analytics, tokenStorage } from '@/services';
 
 const RESEND_DELAY = 30;
 
@@ -65,18 +66,19 @@ export default function OtpScreen() {
         }
       );
     } catch (err) {
-      const message =
-        err instanceof ApiError
-          ? (err.response?.message ?? 'Code invalide, veuillez réessayer.')
-          : 'Code invalide, veuillez réessayer.';
-      setError(message);
+      setError(getAuthErrorMessage(err, 'Code invalide, veuillez réessayer.'));
     }
   }
 
   async function handleResend() {
     if (!email || !canResend) return;
-    await sendCode({ email, type: flowType });
-    setTimer(RESEND_DELAY);
+    setError(undefined);
+    try {
+      await sendCode({ email, type: flowType });
+      setTimer(RESEND_DELAY);
+    } catch (err) {
+      setError(getAuthErrorMessage(err, 'Impossible de renvoyer le code, veuillez réessayer.'));
+    }
   }
 
   if (!email) return null;

@@ -10,6 +10,7 @@ import {
 } from '@/features/secretary-auth/schemas';
 import type { LoginSecretaryFormProps } from '@/features/secretary-auth/types';
 import { ArrowForwardIcon, MailIcon } from '@/icons';
+import { isTooManyAttempts, TOO_MANY_ATTEMPTS_MESSAGE } from '@/lib/auth-error-message';
 import { cn } from '@/lib/utils';
 import { ApiError, analytics, tokenStorage } from '@/services';
 
@@ -30,6 +31,7 @@ function LoginSecretaryForm({ className }: LoginSecretaryFormProps) {
   });
 
   function getErrorMessage(error: unknown) {
+    if (isTooManyAttempts(error)) return TOO_MANY_ATTEMPTS_MESSAGE;
     if (error instanceof ApiError) return error.response?.message ?? 'Identifiants invalides.';
     if (error instanceof Error) return error.message;
     return 'Une erreur est survenue.';
