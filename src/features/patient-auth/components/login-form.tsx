@@ -11,6 +11,7 @@ import { loginSchema, type LoginFormValues } from '@/features/patient-auth/schem
 import { signInWithApple, signInWithGoogle } from '@/features/patient-auth/services';
 import type { LoginFormProps } from '@/features/patient-auth/types';
 import { ArrowForwardIcon, MailIcon } from '@/icons';
+import { getAuthErrorMessage } from '@/lib/auth-error-message';
 import { cn } from '@/lib/utils';
 import { AnalyticsEvent, analytics, ApiError, tokenStorage } from '@/services';
 
@@ -38,7 +39,7 @@ function LoginForm({ className }: LoginFormProps) {
   });
 
   function getErrorMessage(error: unknown) {
-    if (error instanceof ApiError) return error.response?.message ?? 'Une erreur est survenue.';
+    if (error instanceof ApiError) return getAuthErrorMessage(error);
     if (error instanceof Error) return error.message;
     return 'Une erreur est survenue.';
   }
