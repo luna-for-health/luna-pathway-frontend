@@ -4,7 +4,8 @@ import { cn } from '@/lib/utils';
 
 describe('cn', () => {
   it('joins class names and drops falsy ones', () => {
-    expect(cn('a', false && 'b', undefined, 'c')).toBe('a c');
+    const isActive = false;
+    expect(cn('a', isActive && 'b', undefined, null, 'c')).toBe('a c');
   });
 
   it('lets later Tailwind classes override earlier ones', () => {
