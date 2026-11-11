@@ -15,6 +15,11 @@ export default mergeConfig(
         reporter: ['text', 'html', 'json-summary'],
         include: ['src/**/*.{ts,tsx}'],
         exclude: ['src/**/*.{test,spec}.{ts,tsx}', 'src/test/**', 'src/**/*.d.ts', 'src/main.tsx'],
+        // Minimum unit-test coverage (UNICEF open-source checklist). CI fails below this.
+        thresholds: {
+          lines: 15,
+          statements: 15,
+        },
       },
     },
   })

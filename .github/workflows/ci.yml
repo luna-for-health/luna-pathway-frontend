@@ -34,6 +34,43 @@ jobs:
       # No .env in CI: VITE_* variables are simply empty, which the app handles.
       - run: npm run build
 
+  unit:
+    name: Unit tests and coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+      # Fails if coverage drops below the thresholds in vitest.config.ts.
+      - run: npm run test:coverage
+
+      - name: Coverage summary
+        if: always()
+        run: |
+          if [ -f coverage/coverage-summary.json ]; then
+            node -e '
+              const t = require("./coverage/coverage-summary.json").total;
+              const row = k => `| ${k} | ${t[k].pct}% | ${t[k].covered} / ${t[k].total} |`;
+              console.log("### Unit test coverage\n");
+              console.log("| Metric | Coverage | Covered |");
+              console.log("| --- | --- | --- |");
+              ["lines", "statements", "functions", "branches"].forEach(k => console.log(row(k)));
+            ' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 14
+
   e2e:
     name: E2E tests (Chromium)
     runs-on: ubuntu-latest
