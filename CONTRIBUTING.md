@@ -67,6 +67,7 @@ Make sure everything passes locally:
 npm run lint
 npm run format:check
 npm run build
+npm test
 npm run test:e2e
 ```
 

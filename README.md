@@ -37,6 +37,7 @@ environment-specific value comes from a local `.env` file that is never committe
   [TanStack Query](https://tanstack.com/query)
 - [React Hook Form](https://react-hook-form.com) + [Zod](https://zod.dev) for forms
 - [Amplitude](https://amplitude.com) for product analytics
+- [Vitest](https://vitest.dev) + [Testing Library](https://testing-library.com) for unit tests
 - [Playwright](https://playwright.dev) for end-to-end tests
 - ESLint, Prettier, Husky + [gitleaks](https://github.com/gitleaks/gitleaks) pre-commit hook
 
@@ -82,6 +83,9 @@ All variables are listed in [`.env.example`](./.env.example). Copy it to `.env.d
 | `npm run lint`            | Run ESLint                                    |
 | `npm run format`          | Format all files with Prettier                |
 | `npm run format:check`    | Check formatting without writing              |
+| `npm test`                | Run the unit tests once                       |
+| `npm run test:watch`      | Run the unit tests in watch mode              |
+| `npm run test:coverage`   | Run the unit tests with a coverage report     |
 | `npm run test:e2e`        | Run the Playwright end-to-end tests           |
 | `npm run test:e2e:ui`     | Open Playwright's interactive UI mode         |
 | `npm run test:e2e:report` | Open the last test report                     |
@@ -111,6 +115,22 @@ More details in [`docs/architecture.md`](./docs/architecture.md) and the compone
 [`docs/components.md`](./docs/components.md).
 
 ## Testing
+
+### Unit tests
+
+Unit tests use [Vitest](https://vitest.dev) with [Testing Library](https://testing-library.com) and
+live next to the code they test (`*.test.ts` / `*.test.tsx`):
+
+```bash
+npm test                 # run once
+npm run test:watch       # re-run on change
+npm run test:coverage    # with coverage (HTML report in coverage/index.html)
+```
+
+CI fails if line coverage drops below **15%** (see `coverage.thresholds` in `vitest.config.ts`). The
+coverage summary of each CI run is shown on its GitHub Actions page.
+
+### End-to-end tests
 
 End-to-end tests use Playwright and run on Chromium, Firefox and WebKit:
 
